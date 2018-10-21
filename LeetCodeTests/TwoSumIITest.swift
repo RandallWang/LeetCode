@@ -1,5 +1,5 @@
 //
-//  LeetCodeTests.swift
+//  TwoSumIITest.swift
 //  LeetCodeTests
 //
 //  Created by Tianchi Wang on 2018/10/21.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import LeetCode
 
-class LeetCodeTests: XCTestCase {
+class TwoSumIITest: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

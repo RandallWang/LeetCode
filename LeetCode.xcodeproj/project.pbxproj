@@ -12,7 +12,10 @@
 		B18E18AF217C238D005E97CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E18AD217C238D005E97CE /* Main.storyboard */; };
 		B18E18B1217C238E005E97CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18E18B0217C238E005E97CE /* Assets.xcassets */; };
 		B18E18B4217C238E005E97CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E18B2217C238E005E97CE /* LaunchScreen.storyboard */; };
-		B18E18BF217C238E005E97CE /* LeetCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18BE217C238E005E97CE /* LeetCodeTests.swift */; };
+		B18E18CA217C23BA005E97CE /* TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18C9217C23BA005E97CE /* TwoSumTests.swift */; };
+		B18E18CD217C241B005E97CE /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18CC217C241B005E97CE /* TwoSum.swift */; };
+		B18E18CF217C2509005E97CE /* TwoSumII.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18CE217C2509005E97CE /* TwoSumII.swift */; };
+		B18E18D1217C3695005E97CE /* TwoSumIITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18D0217C3695005E97CE /* TwoSumIITest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +37,11 @@
 		B18E18B3217C238E005E97CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B18E18B5217C238E005E97CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B18E18BA217C238E005E97CE /* LeetCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B18E18BE217C238E005E97CE /* LeetCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeTests.swift; sourceTree = "<group>"; };
 		B18E18C0217C238E005E97CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18E18C9217C23BA005E97CE /* TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTests.swift; sourceTree = "<group>"; };
+		B18E18CC217C241B005E97CE /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
+		B18E18CE217C2509005E97CE /* TwoSumII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumII.swift; sourceTree = "<group>"; };
+		B18E18D0217C3695005E97CE /* TwoSumIITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumIITest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		B18E18A8217C238D005E97CE /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				B18E18CB217C23F6005E97CE /* LeetCode */,
 				B18E18A9217C238D005E97CE /* AppDelegate.swift */,
 				B18E18AB217C238D005E97CE /* ViewController.swift */,
 				B18E18AD217C238D005E97CE /* Main.storyboard */,
@@ -90,10 +97,20 @@
 		B18E18BD217C238E005E97CE /* LeetCodeTests */ = {
 			isa = PBXGroup;
 			children = (
-				B18E18BE217C238E005E97CE /* LeetCodeTests.swift */,
+				B18E18C9217C23BA005E97CE /* TwoSumTests.swift */,
+				B18E18D0217C3695005E97CE /* TwoSumIITest.swift */,
 				B18E18C0217C238E005E97CE /* Info.plist */,
 			);
 			path = LeetCodeTests;
+			sourceTree = "<group>";
+		};
+		B18E18CB217C23F6005E97CE /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				B18E18CC217C241B005E97CE /* TwoSum.swift */,
+				B18E18CE217C2509005E97CE /* TwoSumII.swift */,
+			);
+			path = LeetCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +216,8 @@
 			files = (
 				B18E18AC217C238D005E97CE /* ViewController.swift in Sources */,
 				B18E18AA217C238D005E97CE /* AppDelegate.swift in Sources */,
+				B18E18CF217C2509005E97CE /* TwoSumII.swift in Sources */,
+				B18E18CD217C241B005E97CE /* TwoSum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B18E18BF217C238E005E97CE /* LeetCodeTests.swift in Sources */,
+				B18E18D1217C3695005E97CE /* TwoSumIITest.swift in Sources */,
+				B18E18CA217C23BA005E97CE /* TwoSumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
