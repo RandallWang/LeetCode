@@ -19,10 +19,49 @@ class TwoSumIITest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testExample1() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let testArray = [2,7,11,15]
+        let target = 9
+        
+        let result1 = TwoSumII.bruteForce(testArray, target: target)
+        let result2 = TwoSumII.twoSum(testArray, target)
+
+        XCTAssertEqual(result1, [1,2])
+        XCTAssertEqual(result2, [1,2])
     }
+    
+    func testExample2() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let testArray = [5,25,75]
+        let target = 100
+        
+        let result1 = TwoSumII.bruteForce(testArray, target: target)
+        let result2 = TwoSumII.twoSum(testArray, target)
+
+        XCTAssertEqual(result1, [2,3])
+        XCTAssertEqual(result2, [2,3])
+    }
+
+    
+    func testExample3() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let testArray = [4,4,11,15]
+        let target = 8
+        
+        let result1 = TwoSumII.bruteForce(testArray, target: target)
+        let result2 = TwoSumII.twoSum(testArray, target)
+
+        XCTAssertEqual(result1, [1,2])
+        XCTAssertEqual(result2, [1,2])
+    }
+
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
