@@ -18,6 +18,8 @@
 		B18E18D1217C3695005E97CE /* TwoSumIITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18D0217C3695005E97CE /* TwoSumIITest.swift */; };
 		B1B91DE021CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DDF21CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift */; };
 		B1B91DE221CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DE121CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift */; };
+		B1B91DE421CF4EEA0011DBB6 /* ShortestCompetingWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */; };
+		B1B91DE621CF4F060011DBB6 /* ShortestCompetingWorldTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DE521CF4F060011DBB6 /* ShortestCompetingWorldTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		B18E18D0217C3695005E97CE /* TwoSumIITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumIITest.swift; sourceTree = "<group>"; };
 		B1B91DDF21CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesfromSortedArray.swift; sourceTree = "<group>"; };
 		B1B91DE121CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedArray.swift; sourceTree = "<group>"; };
+		B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestCompetingWorld.swift; sourceTree = "<group>"; };
+		B1B91DE521CF4F060011DBB6 /* ShortestCompetingWorldTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestCompetingWorldTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				B18E18C9217C23BA005E97CE /* TwoSumTests.swift */,
 				B18E18D0217C3695005E97CE /* TwoSumIITest.swift */,
 				B1B91DE121CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift */,
+				B1B91DE521CF4F060011DBB6 /* ShortestCompetingWorldTest.swift */,
 				B18E18C0217C238E005E97CE /* Info.plist */,
 			);
 			path = LeetCodeTests;
@@ -115,6 +120,7 @@
 				B18E18CC217C241B005E97CE /* TwoSum.swift */,
 				B18E18CE217C2509005E97CE /* TwoSumII.swift */,
 				B1B91DDF21CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift */,
+				B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 				B18E18AC217C238D005E97CE /* ViewController.swift in Sources */,
 				B18E18AA217C238D005E97CE /* AppDelegate.swift in Sources */,
 				B18E18CF217C2509005E97CE /* TwoSumII.swift in Sources */,
+				B1B91DE421CF4EEA0011DBB6 /* ShortestCompetingWorld.swift in Sources */,
 				B1B91DE021CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift in Sources */,
 				B18E18CD217C241B005E97CE /* TwoSum.swift in Sources */,
 			);
@@ -234,6 +241,7 @@
 			files = (
 				B18E18D1217C3695005E97CE /* TwoSumIITest.swift in Sources */,
 				B1B91DE221CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift in Sources */,
+				B1B91DE621CF4F060011DBB6 /* ShortestCompetingWorldTest.swift in Sources */,
 				B18E18CA217C23BA005E97CE /* TwoSumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
