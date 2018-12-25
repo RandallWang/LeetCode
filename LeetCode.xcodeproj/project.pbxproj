@@ -20,6 +20,9 @@
 		B1B91DE221CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DE121CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift */; };
 		B1B91DE421CF4EEA0011DBB6 /* ShortestCompetingWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */; };
 		B1B91DE621CF4F060011DBB6 /* ShortestCompetingWorldTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DE521CF4F060011DBB6 /* ShortestCompetingWorldTest.swift */; };
+		B1B91E1A21D0C0790011DBB6 /* Leaf-Similar Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91E1921D0C0790011DBB6 /* Leaf-Similar Trees.swift */; };
+		B1B91E1C21D0C0880011DBB6 /* Leaf-Similar Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91E1B21D0C0880011DBB6 /* Leaf-Similar Trees.swift */; };
+		B1B91E1F21D0C64D0011DBB6 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91E1E21D0C64D0011DBB6 /* TreeNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		B1B91DE121CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedArray.swift; sourceTree = "<group>"; };
 		B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestCompetingWorld.swift; sourceTree = "<group>"; };
 		B1B91DE521CF4F060011DBB6 /* ShortestCompetingWorldTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestCompetingWorldTest.swift; sourceTree = "<group>"; };
+		B1B91E1921D0C0790011DBB6 /* Leaf-Similar Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaf-Similar Trees.swift"; sourceTree = "<group>"; };
+		B1B91E1B21D0C0880011DBB6 /* Leaf-Similar Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaf-Similar Trees.swift"; sourceTree = "<group>"; };
+		B1B91E1E21D0C64D0011DBB6 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 		B18E18A8217C238D005E97CE /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				B1B91E1D21D0C1B00011DBB6 /* SupportClasses */,
 				B18E18CB217C23F6005E97CE /* LeetCode */,
 				B18E18A9217C238D005E97CE /* AppDelegate.swift */,
 				B18E18AB217C238D005E97CE /* ViewController.swift */,
@@ -109,6 +116,7 @@
 				B18E18D0217C3695005E97CE /* TwoSumIITest.swift */,
 				B1B91DE121CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift */,
 				B1B91DE521CF4F060011DBB6 /* ShortestCompetingWorldTest.swift */,
+				B1B91E1B21D0C0880011DBB6 /* Leaf-Similar Trees.swift */,
 				B18E18C0217C238E005E97CE /* Info.plist */,
 			);
 			path = LeetCodeTests;
@@ -121,8 +129,17 @@
 				B18E18CE217C2509005E97CE /* TwoSumII.swift */,
 				B1B91DDF21CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift */,
 				B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */,
+				B1B91E1921D0C0790011DBB6 /* Leaf-Similar Trees.swift */,
 			);
 			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		B1B91E1D21D0C1B00011DBB6 /* SupportClasses */ = {
+			isa = PBXGroup;
+			children = (
+				B1B91E1E21D0C64D0011DBB6 /* TreeNode.swift */,
+			);
+			path = SupportClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,11 +244,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18E18AC217C238D005E97CE /* ViewController.swift in Sources */,
+				B1B91E1A21D0C0790011DBB6 /* Leaf-Similar Trees.swift in Sources */,
 				B18E18AA217C238D005E97CE /* AppDelegate.swift in Sources */,
 				B18E18CF217C2509005E97CE /* TwoSumII.swift in Sources */,
 				B1B91DE421CF4EEA0011DBB6 /* ShortestCompetingWorld.swift in Sources */,
 				B1B91DE021CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift in Sources */,
 				B18E18CD217C241B005E97CE /* TwoSum.swift in Sources */,
+				B1B91E1F21D0C64D0011DBB6 /* TreeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +260,7 @@
 			files = (
 				B18E18D1217C3695005E97CE /* TwoSumIITest.swift in Sources */,
 				B1B91DE221CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift in Sources */,
+				B1B91E1C21D0C0880011DBB6 /* Leaf-Similar Trees.swift in Sources */,
 				B1B91DE621CF4F060011DBB6 /* ShortestCompetingWorldTest.swift in Sources */,
 				B18E18CA217C23BA005E97CE /* TwoSumTests.swift in Sources */,
 			);
