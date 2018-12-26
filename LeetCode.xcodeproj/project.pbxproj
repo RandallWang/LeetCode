@@ -16,6 +16,8 @@
 		B18E18CD217C241B005E97CE /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18CC217C241B005E97CE /* TwoSum.swift */; };
 		B18E18CF217C2509005E97CE /* TwoSumII.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18CE217C2509005E97CE /* TwoSumII.swift */; };
 		B18E18D1217C3695005E97CE /* TwoSumIITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18D0217C3695005E97CE /* TwoSumIITest.swift */; };
+		B1A3C23621D3208C00C9E0BD /* Search in a Binary Search Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3C23521D3208C00C9E0BD /* Search in a Binary Search Tree.swift */; };
+		B1A3C23821D32A5D00C9E0BD /* searchBSTTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3C23721D32A5D00C9E0BD /* searchBSTTest.swift */; };
 		B1B91DE021CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DDF21CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift */; };
 		B1B91DE221CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DE121CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift */; };
 		B1B91DE421CF4EEA0011DBB6 /* ShortestCompetingWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */; };
@@ -49,6 +51,8 @@
 		B18E18CC217C241B005E97CE /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		B18E18CE217C2509005E97CE /* TwoSumII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumII.swift; sourceTree = "<group>"; };
 		B18E18D0217C3695005E97CE /* TwoSumIITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumIITest.swift; sourceTree = "<group>"; };
+		B1A3C23521D3208C00C9E0BD /* Search in a Binary Search Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search in a Binary Search Tree.swift"; sourceTree = "<group>"; };
+		B1A3C23721D32A5D00C9E0BD /* searchBSTTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBSTTest.swift; sourceTree = "<group>"; };
 		B1B91DDF21CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesfromSortedArray.swift; sourceTree = "<group>"; };
 		B1B91DE121CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedArray.swift; sourceTree = "<group>"; };
 		B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestCompetingWorld.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				B1B91DE121CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift */,
 				B1B91DE521CF4F060011DBB6 /* ShortestCompetingWorldTest.swift */,
 				B1B91E1B21D0C0880011DBB6 /* Leaf-Similar Trees.swift */,
+				B1A3C23721D32A5D00C9E0BD /* searchBSTTest.swift */,
 				B18E18C0217C238E005E97CE /* Info.plist */,
 			);
 			path = LeetCodeTests;
@@ -130,6 +135,7 @@
 				B1B91DDF21CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift */,
 				B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */,
 				B1B91E1921D0C0790011DBB6 /* Leaf-Similar Trees.swift */,
+				B1A3C23521D3208C00C9E0BD /* Search in a Binary Search Tree.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 				B1B91DE421CF4EEA0011DBB6 /* ShortestCompetingWorld.swift in Sources */,
 				B1B91DE021CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift in Sources */,
 				B18E18CD217C241B005E97CE /* TwoSum.swift in Sources */,
+				B1A3C23621D3208C00C9E0BD /* Search in a Binary Search Tree.swift in Sources */,
 				B1B91E1F21D0C64D0011DBB6 /* TreeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +270,7 @@
 				B1B91E1C21D0C0880011DBB6 /* Leaf-Similar Trees.swift in Sources */,
 				B1B91DE621CF4F060011DBB6 /* ShortestCompetingWorldTest.swift in Sources */,
 				B18E18CA217C23BA005E97CE /* TwoSumTests.swift in Sources */,
+				B1A3C23821D32A5D00C9E0BD /* searchBSTTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,26 @@ public class TreeNode {
         self.right = nil
     }
     
+    public initWithPreOrderValueArray(values:[Int]){
+    
+    
+    }
+    
+    public initWithInOrderValueArray(values:[Int]){
+    
+    
+    }
+    
+    public initWithPostOrderValueArray(values:[Int]){
+    
+    
+    }
+    
+    public initWithBreadthOrderValueArray(values:[Int]){
+    
+    
+    }
+    
     func preOrderTraverse(root: TreeNode?) {
         guard let root = root else{
             return
@@ -50,6 +70,9 @@ public class TreeNode {
         print("\(root.val)")
     }
     
+    func breadthFirstSearch(root: TreeNode?) {
+        
+    }
 
 
 }
