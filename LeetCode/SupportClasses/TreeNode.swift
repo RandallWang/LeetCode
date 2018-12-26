@@ -19,25 +19,25 @@ public class TreeNode {
         self.right = nil
     }
     
-    public initWithPreOrderValueArray(values:[Int]){
-    
-    
-    }
-    
-    public initWithInOrderValueArray(values:[Int]){
-    
-    
-    }
-    
-    public initWithPostOrderValueArray(values:[Int]){
-    
-    
-    }
-    
-    public initWithBreadthOrderValueArray(values:[Int]){
-    
-    
-    }
+//    public initWithPreOrderValueArray(values:[Int]){
+//
+//
+//    }
+//
+//    public initWithInOrderValueArray(values:[Int]){
+//
+//
+//    }
+//
+//    public initWithPostOrderValueArray(values:[Int]){
+//
+//
+//    }
+//
+//    public initWithBreadthOrderValueArray(values:[Int]){
+//
+//
+//    }
     
     func preOrderTraverse(root: TreeNode?) {
         guard let root = root else{

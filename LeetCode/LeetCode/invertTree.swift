@@ -41,22 +41,12 @@ class invertTree {
             return nil;
         }
         
-        root.left = invertTree(root.left)
-        root.right = invertTree(root.right)
+        let leftNode = invertTree(root.left)
+        let rightNode = invertTree(root.right)
         
-        if root.left == nil && root.right == nil {
-            return root
-        }else {
-            return swap(leftNode: root.left, rightNode: root.right, rootNode: root)
-        }
+        root.left = rightNode
+        root.right = leftNode
 
         return root
-    }
-    
-    func swap(leftNode: TreeNode?, rightNode: TreeNode?, rootNode:TreeNode) -> TreeNode {
-        rootNode.left = rightNode
-        rootNode.right = leftNode
-        
-        return rootNode
     }
 }
