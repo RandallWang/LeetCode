@@ -19,59 +19,54 @@ public class TreeNode {
         self.right = nil
     }
     
-//    public initWithPreOrderValueArray(values:[Int]){
-//
-//
-//    }
-//
-//    public initWithInOrderValueArray(values:[Int]){
-//
-//
-//    }
-//
-//    public initWithPostOrderValueArray(values:[Int]){
-//
-//
-//    }
-//
-//    public initWithBreadthOrderValueArray(values:[Int]){
-//
-//
-//    }
-    
-    func preOrderTraverse(root: TreeNode?) {
+//MARK: - DFS recursive
+    func DFS_PreOrderTraverse(root: TreeNode?) {
         guard let root = root else{
             return
         }
 
         print("\(root.val)")
-        preOrderTraverse(root: root.left)
-        preOrderTraverse(root: root.right)
+        DFS_PreOrderTraverse(root: root.left)
+        DFS_PreOrderTraverse(root: root.right)
     }
     
     
-    func inOrderTraverse(root: TreeNode?) {
+    func DFS_InOrderTraverse(root: TreeNode?) {
         guard let root = root else{
             return
         }
         
-        inOrderTraverse(root: root.left)
+        DFS_InOrderTraverse(root: root.left)
         print("\(root.val)")
-        inOrderTraverse(root: root.right)
+        DFS_InOrderTraverse(root: root.right)
     }
     
-    func postOrderTraverse(root: TreeNode?) {
+    
+    func DFS_PostOrderTraverse(root: TreeNode?) {
         guard let root = root else{
             return
         }
         
-        postOrderTraverse(root: root.left)
-        postOrderTraverse(root: root.right)
+        DFS_PostOrderTraverse(root: root.left)
+        DFS_PostOrderTraverse(root: root.right)
         print("\(root.val)")
     }
+
+//MARK: - DFS iterative
     
+//MARK: - BFS
     func breadthFirstSearch(root: TreeNode?) {
         
+    }
+}
+
+extension TreeNode: Equatable {
+    public static func == (lhs: TreeNode, rhs: TreeNode) -> Bool {
+        if lhs.val == rhs.val {
+            return lhs.right == rhs.right && lhs.left == rhs.left
+        }else {
+            return false
+        }
     }
 
 

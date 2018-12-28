@@ -37,7 +37,7 @@
 import Foundation
 
 class ShortestCompetingWorld {
-    class func shortestCompletingWord(_ licensePlate: String, _ words: [String]) -> String {
+    func shortestCompletingWord(_ licensePlate: String, _ words: [String]) -> String {
         let target:[Character]  = self.perpareTheTarger(plate: licensePlate)
         
         var suitableResult:[String] = []
@@ -61,7 +61,7 @@ class ShortestCompetingWorld {
         return shortestResult
     }
     
-    class func isSuitableWord (word: String, plate: [Character]) -> Bool {//ignore case
+    func isSuitableWord (word: String, plate: [Character]) -> Bool {//ignore case
         var lowerCaseWord = word.lowercased()
         
         for character in plate {
@@ -75,7 +75,7 @@ class ShortestCompetingWorld {
         return true
     }
     
-    class func perpareTheTarger (plate: String) -> [Character] {
+    func perpareTheTarger (plate: String) -> [Character] {
         let targetString = plate.components(separatedBy: NSCharacterSet.decimalDigits).joined().lowercased().components(separatedBy: NSCharacterSet.whitespaces).joined()
         
         return Array(targetString)

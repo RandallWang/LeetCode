@@ -55,7 +55,7 @@ class IsSubtree {
         }
     }
     
-    func isSameTree(_ s: TreeNode?, _ t: TreeNode?) -> Bool {
+    private func isSameTree(_ s: TreeNode?, _ t: TreeNode?) -> Bool {
         if s == nil && t == nil {
             return true
         }

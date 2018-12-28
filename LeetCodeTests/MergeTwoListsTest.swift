@@ -1,17 +1,16 @@
 //
-//  ShortestCompetingWorldTest.swift
+//  MergeTwoListsTest.swift
 //  LeetCodeTests
 //
-//  Created by Tianchi Wang on 2018/12/23.
+//  Created by Tianchi Wang on 2018/12/27.
 //  Copyright © 2018 Tianchi Wang. All rights reserved.
 //
 
 import XCTest
 @testable import LeetCode
 
-class ShortestCompetingWorldTest: XCTestCase {
+class MergeTwoListsTest: XCTestCase {
 
-    let obj:ShortestCompetingWorld = ShortestCompetingWorld()
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -23,20 +22,8 @@ class ShortestCompetingWorldTest: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let licensePlate = "1s3 PSt"
-        let words = ["step", "steps", "stripe", "stepple"]
-        
-        let result = obj.shortestCompletingWord(licensePlate, words)
-        XCTAssertEqual(result, "steps")
     }
 
-    func testExample2() {
-        let licensePlate = "1s3 456"
-        let words = ["looks", "pest", "stew", "show"]
-        
-        let result = obj.shortestCompletingWord(licensePlate, words)
-        XCTAssertEqual(result, "pest")
-    }
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

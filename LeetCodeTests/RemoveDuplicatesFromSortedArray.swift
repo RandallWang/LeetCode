@@ -11,6 +11,8 @@ import XCTest
 
 class RemoveDuplicatesFromSortedArray: XCTestCase {
 
+    let obj:removeDuplicates = removeDuplicates()
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -24,36 +26,36 @@ class RemoveDuplicatesFromSortedArray: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         var nums = [0,0,1,1,1,2,2,3,3,4]
-        let length = removeDuplicates.removeDuplicates(&nums)
+        let length = obj.removeDuplicates(&nums)
         var nums2 = [0,0,1,1,1,2,2,3,3,4]
-        let length2 = removeDuplicates.removeDuplicates2(&nums2)
+        let length2 = obj.removeDuplicates2(&nums2)
         XCTAssertEqual(length, 5)
         XCTAssertEqual(length2, 5)
     }
 
     func testCase1() {
         var nums = [1, 1]
-        let length = removeDuplicates.removeDuplicates(&nums)
+        let length = obj.removeDuplicates(&nums)
         var nums2 = [1, 1]
-        let length2 = removeDuplicates.removeDuplicates2(&nums2)
+        let length2 = obj.removeDuplicates2(&nums2)
         XCTAssertEqual(length, 1)
         XCTAssertEqual(length2, 1)
     }
     
     func testCase2() {
         var nums = [1, 1, 1]
-        let length = removeDuplicates.removeDuplicates(&nums)
+        let length = obj.removeDuplicates(&nums)
         var nums2 = [1, 1, 1]
-        let length2 = removeDuplicates.removeDuplicates2(&nums2)
+        let length2 = obj.removeDuplicates2(&nums2)
         XCTAssertEqual(length, 1)
         XCTAssertEqual(length2, 1)
     }
     
     func testCase3() {
         var nums = [0, 0, 0, 0]
-        let length = removeDuplicates.removeDuplicates(&nums)
+        let length = obj.removeDuplicates(&nums)
         var nums2 = [0, 0, 0, 0]
-        let length2 = removeDuplicates.removeDuplicates2(&nums2)
+        let length2 = obj.removeDuplicates2(&nums2)
 
         XCTAssertEqual(length, 1)
         XCTAssertEqual(length2, 1)

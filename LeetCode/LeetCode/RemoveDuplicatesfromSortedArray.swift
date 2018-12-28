@@ -46,7 +46,7 @@ import Foundation
 
  */
 class removeDuplicates {
-    class func removeDuplicates(_ nums: inout [Int]) -> Int {
+    func removeDuplicates(_ nums: inout [Int]) -> Int {
         guard var baselineNumber = nums.first else{
             return 0
         }
@@ -71,7 +71,7 @@ class removeDuplicates {
         return length
     }
     
-    class func removeDuplicates2(_ nums: inout [Int]) -> Int {
+    func removeDuplicates2(_ nums: inout [Int]) -> Int {
         var len = 0
         for i in 0 ..< nums.count {
             if (i == 0 || nums[i] != nums[i - 1]) {

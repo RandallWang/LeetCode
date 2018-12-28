@@ -31,7 +31,7 @@ import Foundation
 */
 
 class LeafSimilarTrees {
-    class func leafSimilar(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
+    func leafSimilar(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
         guard let root1 = root1, let root2 = root2 else{
             return false
         }
@@ -44,13 +44,12 @@ class LeafSimilarTrees {
         return sequence1 == sequence2
     }
     
-    class func preOrderTraverse(root: TreeNode?, sequence:inout[Int] ) {
+    private func preOrderTraverse(root: TreeNode?, sequence:inout[Int] ) {
         guard let root = root else{
             return
         }
         
         if isLeafNode(node: root) {
-            print("\(root.val)")
             sequence.append(root.val)
         }
         
@@ -58,7 +57,7 @@ class LeafSimilarTrees {
         preOrderTraverse(root: root.right, sequence:&sequence)
     }
     
-    class func isLeafNode(node: TreeNode) -> Bool{
+    private func isLeafNode(node: TreeNode) -> Bool{
         return node.left == nil && node.right == nil
     }
 

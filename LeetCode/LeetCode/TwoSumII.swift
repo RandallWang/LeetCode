@@ -23,7 +23,7 @@
 */
 class TwoSumII {
     //O(n2)
-    class func bruteForce(_ nums: [Int], target: Int) -> [Int] {
+    func bruteForce(_ nums: [Int], target: Int) -> [Int] {
         for indexI in 0..<nums.count {
             for indexJ in 1..<nums.count {
                 if nums[indexI] + nums[indexJ] == target && indexJ > indexI{
@@ -34,7 +34,7 @@ class TwoSumII {
         return [];
     }
     
-    class func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
+    func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
         if target < numbers.first! {
             return[]
         }

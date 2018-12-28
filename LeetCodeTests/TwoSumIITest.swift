@@ -11,6 +11,8 @@ import XCTest
 
 class TwoSumIITest: XCTestCase {
 
+    let twoSumII: TwoSumII = TwoSumII()
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -26,8 +28,8 @@ class TwoSumIITest: XCTestCase {
         let testArray = [2,7,11,15]
         let target = 9
         
-        let result1 = TwoSumII.bruteForce(testArray, target: target)
-        let result2 = TwoSumII.twoSum(testArray, target)
+        let result1 = twoSumII.bruteForce(testArray, target: target)
+        let result2 = twoSumII.twoSum(testArray, target)
 
         XCTAssertEqual(result1, [1,2])
         XCTAssertEqual(result2, [1,2])
@@ -40,8 +42,8 @@ class TwoSumIITest: XCTestCase {
         let testArray = [5,25,75]
         let target = 100
         
-        let result1 = TwoSumII.bruteForce(testArray, target: target)
-        let result2 = TwoSumII.twoSum(testArray, target)
+        let result1 = twoSumII.bruteForce(testArray, target: target)
+        let result2 = twoSumII.twoSum(testArray, target)
 
         XCTAssertEqual(result1, [2,3])
         XCTAssertEqual(result2, [2,3])
@@ -55,8 +57,8 @@ class TwoSumIITest: XCTestCase {
         let testArray = [4,4,11,15]
         let target = 8
         
-        let result1 = TwoSumII.bruteForce(testArray, target: target)
-        let result2 = TwoSumII.twoSum(testArray, target)
+        let result1 = twoSumII.bruteForce(testArray, target: target)
+        let result2 = twoSumII.twoSum(testArray, target)
 
         XCTAssertEqual(result1, [1,2])
         XCTAssertEqual(result2, [1,2])

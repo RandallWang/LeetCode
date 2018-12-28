@@ -11,6 +11,8 @@ import XCTest
 
 class TwoSumTests: XCTestCase {
 
+    let twoSum:TwoSum = TwoSum()
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -24,7 +26,7 @@ class TwoSumTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let testArray = [2, 7, 11, 15]
         let target = 9
-        let result = TwoSum.twoSum(testArray, target)
+        let result = twoSum.twoSum(testArray, target)
 
         XCTAssertEqual(result, [0, 1])
     }
@@ -34,7 +36,7 @@ class TwoSumTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let testArray = [5, 5, 11, 15]
         let target = 10
-        let result = TwoSum.twoSum(testArray, target)
+        let result = twoSum.twoSum(testArray, target)
         
         XCTAssertEqual(result, [0, 1])
     }

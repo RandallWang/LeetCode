@@ -21,7 +21,7 @@
 
 
 class TwoSum {
-    class func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var dict = [Int : Int]()
         
         for (k,v) in nums.enumerated() {

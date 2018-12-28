@@ -17,3 +17,15 @@ public class ListNode {
         self.next = nil
      }
 }
+
+
+extension ListNode: Equatable {
+    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+        if lhs.val == rhs.val {
+            return lhs.next == rhs.next
+        }else {
+            return false
+        }
+    }
+
+}
