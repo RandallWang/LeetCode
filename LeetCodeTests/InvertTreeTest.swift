@@ -11,7 +11,7 @@ import XCTest
 
 class InvertTreeTest: XCTestCase {
 
-    let obj = invertTree()
+    let test = invertTree()
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -39,7 +39,7 @@ class InvertTreeTest: XCTestCase {
         outputTree.right?.left = TreeNode.init(3)
         outputTree.right?.right = TreeNode.init(1)
 
-        let resultTree = obj.invertTree(inputTree)
+        let resultTree = test.invertTree(inputTree)
         XCTAssertEqual(resultTree, outputTree)
     }
 

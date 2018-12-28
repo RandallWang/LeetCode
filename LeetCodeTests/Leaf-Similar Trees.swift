@@ -11,7 +11,7 @@ import XCTest
 
 class Leaf_Similar_Trees: XCTestCase {
     
-    let obj:LeafSimilarTrees = LeafSimilarTrees()
+    let test:LeafSimilarTrees = LeafSimilarTrees()
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -43,7 +43,7 @@ class Leaf_Similar_Trees: XCTestCase {
         testNode.right?.right?.left = TreeNode.init(9)
         testNode.right?.right?.right = TreeNode.init(8)
         
-        let result = obj.leafSimilar(root, testNode)
+        let result = test.leafSimilar(root, testNode)
         
         XCTAssertTrue(result)
     }

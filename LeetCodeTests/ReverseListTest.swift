@@ -11,7 +11,7 @@ import XCTest
 
 class ReverseListTest: XCTestCase {
 
-    let obj = reverseList()
+    let test = reverseList()
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -36,7 +36,7 @@ class ReverseListTest: XCTestCase {
         resultNode.next?.next?.next = ListNode.init(2)
         resultNode.next?.next?.next?.next = ListNode.init(1)
 
-        let resultListNode = obj.MDZZ_reverseList(listNode)
+        let resultListNode = test.dull_reverseList(listNode)
         
         XCTAssertEqual(resultListNode, resultNode)
     }

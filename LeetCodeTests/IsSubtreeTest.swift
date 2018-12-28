@@ -11,7 +11,7 @@ import XCTest
 
 class IsSubtreeTest: XCTestCase {
 
-    let obj:IsSubtree = IsSubtree()
+    let test:IsSubtree = IsSubtree()
     
     
     override func setUp() {
@@ -35,7 +35,7 @@ class IsSubtreeTest: XCTestCase {
         treeT.left = TreeNode.init(1)
         treeT.right = TreeNode.init(2)
 
-        XCTAssertTrue(obj.isSubtree(treeS, treeT))
+        XCTAssertTrue(test.isSubtree(treeS, treeT))
     }
     
     func testExample2() {
@@ -50,7 +50,7 @@ class IsSubtreeTest: XCTestCase {
         treeT.left = TreeNode.init(1)
         treeT.right = TreeNode.init(2)
         
-        XCTAssertFalse(obj.isSubtree(treeS, treeT))
+        XCTAssertFalse(test.isSubtree(treeS, treeT))
     }
 
 

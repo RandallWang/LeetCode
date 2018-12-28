@@ -11,7 +11,7 @@ import XCTest
 
 class searchBSTTest: XCTestCase {
 
-    let obj:searchBST = searchBST()
+    let test:searchBST = searchBST()
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -35,7 +35,7 @@ class searchBSTTest: XCTestCase {
         target.left = TreeNode.init(1)
         target.right = TreeNode.init(3)
         
-        let result = obj.searchBST(root, 2)
+        let result = test.searchBST(root, 2)
         
         XCTAssertEqual(result, target)
     }

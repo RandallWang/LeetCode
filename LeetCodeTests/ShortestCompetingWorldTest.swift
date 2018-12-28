@@ -11,7 +11,7 @@ import XCTest
 
 class ShortestCompetingWorldTest: XCTestCase {
 
-    let obj:ShortestCompetingWorld = ShortestCompetingWorld()
+    let test:ShortestCompetingWorld = ShortestCompetingWorld()
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -26,7 +26,7 @@ class ShortestCompetingWorldTest: XCTestCase {
         let licensePlate = "1s3 PSt"
         let words = ["step", "steps", "stripe", "stepple"]
         
-        let result = obj.shortestCompletingWord(licensePlate, words)
+        let result = test.shortestCompletingWord(licensePlate, words)
         XCTAssertEqual(result, "steps")
     }
 
@@ -34,7 +34,7 @@ class ShortestCompetingWorldTest: XCTestCase {
         let licensePlate = "1s3 456"
         let words = ["looks", "pest", "stew", "show"]
         
-        let result = obj.shortestCompletingWord(licensePlate, words)
+        let result = test.shortestCompletingWord(licensePlate, words)
         XCTAssertEqual(result, "pest")
     }
     func testPerformanceExample() {

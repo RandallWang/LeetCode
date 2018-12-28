@@ -15,7 +15,22 @@ public class ListNode {
     public init(_ val: Int) {
         self.val = val
         self.next = nil
-     }
+    }
+    
+    public func append(_ nodeValue: Int) {
+        guard let nextNode = self.next else {
+            self.next = ListNode.init(nodeValue)
+            return
+        }
+        var lastNode: ListNode? = nextNode
+        
+        while lastNode?.next != nil{
+            lastNode = lastNode?.next
+        }
+        lastNode?.next = ListNode.init(nodeValue)
+    }
+    
+    
 }
 
 

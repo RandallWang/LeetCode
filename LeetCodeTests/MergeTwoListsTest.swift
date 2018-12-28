@@ -11,6 +11,7 @@ import XCTest
 
 class MergeTwoListsTest: XCTestCase {
 
+    let test: mergeTwoLists = mergeTwoLists()
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -22,7 +23,27 @@ class MergeTwoListsTest: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let inputList1: ListNode = ListNode.init(1)
+        inputList1.append(2)
+        inputList1.append(4)
+        
+        let inputList2: ListNode = ListNode.init(1)
+        inputList2.append(3)
+        inputList2.append(4)
+        
+        let target: ListNode = ListNode.init(1)
+        target.append(1)
+        target.append(2)
+        target.append(3)
+        target.append(4)
+        target.append(4)
+
+        
+        let result = test.mergeTwoLists(inputList1, inputList2)
+        
+        XCTAssertEqual(result, target)
     }
+    
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

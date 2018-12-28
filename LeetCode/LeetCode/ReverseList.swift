@@ -22,7 +22,7 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 */
 
 class reverseList {
-    func MDZZ_reverseList(_ head: ListNode?) -> ListNode? {
+    func dull_reverseList(_ head: ListNode?) -> ListNode? {
         if head == nil {
             return nil
         }
