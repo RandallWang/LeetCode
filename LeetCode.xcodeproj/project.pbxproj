@@ -28,6 +28,8 @@
 		B1A3C2A221D5290000C9E0BD /* MergeTwoListsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3C2A121D5290000C9E0BD /* MergeTwoListsTest.swift */; };
 		B1A3C2A421D603EB00C9E0BD /* InvertTreeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3C2A321D603EB00C9E0BD /* InvertTreeTest.swift */; };
 		B1A3C2A621D61D4900C9E0BD /* Network Delay Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3C2A521D61D4900C9E0BD /* Network Delay Time.swift */; };
+		B1A3C2A821D6379800C9E0BD /* Jewels and Stones.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3C2A721D6379800C9E0BD /* Jewels and Stones.swift */; };
+		B1A3C2AA21D637AF00C9E0BD /* Jewels&StonesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3C2A921D637AF00C9E0BD /* Jewels&StonesTest.swift */; };
 		B1B91DE021CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DDF21CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift */; };
 		B1B91DE221CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DE121CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift */; };
 		B1B91DE421CF4EEA0011DBB6 /* ShortestCompetingWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */; };
@@ -73,6 +75,8 @@
 		B1A3C2A121D5290000C9E0BD /* MergeTwoListsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoListsTest.swift; sourceTree = "<group>"; };
 		B1A3C2A321D603EB00C9E0BD /* InvertTreeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertTreeTest.swift; sourceTree = "<group>"; };
 		B1A3C2A521D61D4900C9E0BD /* Network Delay Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Delay Time.swift"; sourceTree = "<group>"; };
+		B1A3C2A721D6379800C9E0BD /* Jewels and Stones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Jewels and Stones.swift"; sourceTree = "<group>"; };
+		B1A3C2A921D637AF00C9E0BD /* Jewels&StonesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Jewels&StonesTest.swift"; sourceTree = "<group>"; };
 		B1B91DDF21CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesfromSortedArray.swift; sourceTree = "<group>"; };
 		B1B91DE121CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedArray.swift; sourceTree = "<group>"; };
 		B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestCompetingWorld.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 				B1A3C29D21D515FC00C9E0BD /* ReverseListTest.swift */,
 				B1A3C2A121D5290000C9E0BD /* MergeTwoListsTest.swift */,
 				B1A3C2A321D603EB00C9E0BD /* InvertTreeTest.swift */,
+				B1A3C2A921D637AF00C9E0BD /* Jewels&StonesTest.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 				B1A3C23B21D36FF400C9E0BD /* IsSubtree.swift */,
 				B1A3C29F21D528D200C9E0BD /* MergeTwoSortedLists.swift */,
 				B1A3C2A521D61D4900C9E0BD /* Network Delay Time.swift */,
+				B1A3C2A721D6379800C9E0BD /* Jewels and Stones.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 				B1A3C29A21D5150500C9E0BD /* ListNode.swift in Sources */,
 				B1A3C2A621D61D4900C9E0BD /* Network Delay Time.swift in Sources */,
 				B1A3C23621D3208C00C9E0BD /* Search in a Binary Search Tree.swift in Sources */,
+				B1A3C2A821D6379800C9E0BD /* Jewels and Stones.swift in Sources */,
 				B1B91E1F21D0C64D0011DBB6 /* TreeNode.swift in Sources */,
 				B1A3C23A21D32EF200C9E0BD /* invertTree.swift in Sources */,
 				B1A3C2A021D528D200C9E0BD /* MergeTwoSortedLists.swift in Sources */,
@@ -304,6 +311,7 @@
 				B1A3C29E21D515FC00C9E0BD /* ReverseListTest.swift in Sources */,
 				B18E18D1217C3695005E97CE /* TwoSumIITest.swift in Sources */,
 				B1B91DE221CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift in Sources */,
+				B1A3C2AA21D637AF00C9E0BD /* Jewels&StonesTest.swift in Sources */,
 				B1B91E1C21D0C0880011DBB6 /* Leaf-Similar Trees.swift in Sources */,
 				B1A3C2A221D5290000C9E0BD /* MergeTwoListsTest.swift in Sources */,
 				B1B91DE621CF4F060011DBB6 /* ShortestCompetingWorldTest.swift in Sources */,
