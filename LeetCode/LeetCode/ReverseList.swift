@@ -29,7 +29,6 @@ class reverseList {
         
         var tempNode:ListNode? = head
         
-        
         var tempList:[Int] = []
 
         while tempNode != nil{
@@ -57,4 +56,31 @@ class reverseList {
         
         return newNode
     }
+    
+    func Iterative_reverseList(_ head: ListNode?) -> ListNode? {
+        var prev: ListNode? = nil
+        var curr: ListNode? = head
+        
+        while curr != nil {
+            let nextTemp = curr?.next
+            curr?.next = prev
+            prev = curr
+            curr = nextTemp
+        }
+        
+        return prev
+    }
+    
+    func Recursive_reverseList(_ head: ListNode?) -> ListNode? {
+        if head?.next == nil || head == nil {
+            return head
+        }
+        let p = Recursive_reverseList(head?.next)
+        
+        head?.next?.next = head
+        head?.next = nil
+
+        return p
+    }
+    
 }

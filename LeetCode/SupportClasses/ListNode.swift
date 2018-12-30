@@ -55,5 +55,4 @@ extension ListNode: Equatable {
             return false
         }
     }
-
 }
