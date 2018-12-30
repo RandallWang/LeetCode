@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ListNode {
+public class ListNode{
     public var val: Int
     public var next: ListNode?
     
@@ -32,7 +32,20 @@ public class ListNode {
     
     
 }
-
+extension ListNode: CustomStringConvertible {
+    public var description: String {
+        var linkedList = "\(self.val)"
+        
+        var temp: ListNode? = self
+        
+        while let next = temp?.next {
+            linkedList.append(" -> \(next.val)")
+            temp = next
+        }
+        
+        return "<\(type(of: self)): \(linkedList)>"
+    }
+}
 
 extension ListNode: Equatable {
     public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
