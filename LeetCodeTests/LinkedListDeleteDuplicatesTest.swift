@@ -9,8 +9,6 @@
 import XCTest
 @testable import LeetCode
 
-
-
 class LinkedListDeleteDuplicatesTest: XCTestCase {
 
     let test = LinkedListDeleteDuplicates()
