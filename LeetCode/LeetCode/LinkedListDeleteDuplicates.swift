@@ -21,7 +21,7 @@ import Foundation
  Output: 1->2->3
  */
 class LinkedListDeleteDuplicates {
-    func deleteDuplicates(_ head: ListNode?) -> ListNode? {
+    func deleteDuplicates(_ head: ListNode<Int>?) -> ListNode<Int>? {
         var current: ListNode? = head
         
         while current != nil && current?.next != nil{

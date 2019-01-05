@@ -18,7 +18,7 @@ import Foundation
 
 class mergeTwoLists {
 
-    func recursive_mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+    func recursive_mergeTwoLists(_ l1: ListNode<Int>?, _ l2: ListNode<Int>?) -> ListNode<Int>? {
         if let l1 = l1, let l2 = l2{
             if l1.val < l2.val {
                 let next = recursive_mergeTwoLists(l1.next, l2)
@@ -33,8 +33,8 @@ class mergeTwoLists {
         return l1 ?? l2
     }
     
-    func iterative_mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        let result: ListNode = ListNode.init(0)
+    func iterative_mergeTwoLists(_ l1: ListNode<Int>?, _ l2: ListNode<Int>?) -> ListNode<Int> {
+        let result: ListNode<Int> = ListNode.init(0)
         var temp: ListNode = result
         
         var l1 = l1
@@ -57,6 +57,6 @@ class mergeTwoLists {
             temp.next = l1
         }
         
-        return result.next
+        return result.next!
     }
 }

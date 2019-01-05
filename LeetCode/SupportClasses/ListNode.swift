@@ -8,16 +8,16 @@
 
 import Foundation
 
-public class ListNode{
-    public var val: Int
+public class ListNode<T: Equatable>{
+    public var val: T
     public var next: ListNode?
     
-    public init(_ val: Int) {
+    public init(_ val: T) {
         self.val = val
         self.next = nil
     }
     
-    public func append(_ nodeValue: Int) {
+    public func append(_ nodeValue: T) {
         guard let nextNode = self.next else {
             self.next = ListNode.init(nodeValue)
             return
@@ -34,16 +34,16 @@ public class ListNode{
 }
 extension ListNode: CustomStringConvertible {
     public var description: String {
-        var linkedList = "\(self.val)"
+        var linkedListDes = "\(self.val)"
         
         var temp: ListNode? = self
         
         while let next = temp?.next {
-            linkedList.append(" -> \(next.val)")
+            linkedListDes.append(" -> \(next.val)")
             temp = next
         }
         
-        return "<\(type(of: self)): \(linkedList)>"
+        return "<\(type(of: self)): \(linkedListDes)>"
     }
 }
 

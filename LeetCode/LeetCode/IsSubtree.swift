@@ -43,7 +43,7 @@ import Foundation
 
 
 class IsSubtree {
-    func isSubtree(_ s: TreeNode?, _ t: TreeNode?) -> Bool {
+    func isSubtree(_ s: TreeNode<Int>?, _ t: TreeNode<Int>?) -> Bool {
         guard let s = s else {
             return false;
         }
@@ -55,7 +55,7 @@ class IsSubtree {
         }
     }
     
-    private func isSameTree(_ s: TreeNode?, _ t: TreeNode?) -> Bool {
+    private func isSameTree(_ s: TreeNode<Int>?, _ t: TreeNode<Int>?) -> Bool {
         if s == nil && t == nil {
             return true
         }

@@ -8,15 +8,19 @@
 
 import Foundation
 
-public class TreeNode {
-    public var val: Int
+public class TreeNode<T:Equatable> {
+    public var val: T
     public var left: TreeNode?
     public var right: TreeNode?
     
-    public init(_ val: Int) {
+    public init(_ val: T) {
         self.val = val
         self.left = nil
         self.right = nil
+    }
+    
+    func height() -> Int {
+        return 0
     }
     
 //MARK: - DFS recursive
@@ -53,11 +57,32 @@ public class TreeNode {
     }
 
 //MARK: - DFS iterative
-    
+//    func (root: TreeNode?) {
+//
+//    }
+//
+//    func (root: TreeNode?) {
+//
+//    }
+//
+//    func (root: TreeNode?) {
+//
+//    }
+
+
 //MARK: - BFS
     func breadthFirstSearch(root: TreeNode?) {
         
+//        while <#condition#> {
+//            
+//        }
     }
+
+    func iterative_breadthFirstSearch(root: TreeNode?) {
+        let queue: Queue<T> = Queue.init()
+        
+    }
+    
 }
 
 extension TreeNode: Equatable {

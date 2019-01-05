@@ -23,8 +23,8 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 
 class reverseList {
     
-    func Iterative_reverseList(_ head: ListNode?) -> ListNode? {
-        var prev: ListNode? = nil
+    func Iterative_reverseList(_ head: ListNode<Int>?) -> ListNode<Int>? {
+        var prev: ListNode<Int>? = nil
         var curr: ListNode? = head
         
         while curr != nil {
@@ -37,7 +37,7 @@ class reverseList {
         return prev
     }
     
-    func Recursive_reverseList(_ head: ListNode?) -> ListNode? {
+    func Recursive_reverseList(_ head: ListNode<Int>?) -> ListNode<Int>? {
         if head?.next == nil || head == nil {
             return head
         }
@@ -49,7 +49,7 @@ class reverseList {
         return p
     }
 
-    func dull_reverseList(_ head: ListNode?) -> ListNode? {
+    func dull_reverseList(_ head: ListNode<Int>?) -> ListNode<Int>? {
         if head == nil {
             return nil
         }
@@ -63,9 +63,9 @@ class reverseList {
             tempNode = tempNode?.next
         }
         
-        var newNode: ListNode? = nil
+        var newNode: ListNode<Int>? = nil
         var index = tempList.count
-        var tailNode: ListNode? = nil
+        var tailNode: ListNode<Int>? = nil
         
         while index > 0 {
             let val = tempList[index - 1]

@@ -33,7 +33,7 @@ import Foundation
 
 
 class searchBST {
-    func searchBST(_ root: TreeNode?, _ val: Int) -> TreeNode? {
+    func searchBST(_ root: TreeNode<Int>?, _ val: Int) -> TreeNode<Int>? {
         guard let root = root else {
             return nil
         }

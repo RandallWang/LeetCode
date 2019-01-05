@@ -10,7 +10,7 @@ import Foundation
 
 
 class LinkedListIsPalindrome {
-    func isPalindrome(_ head: ListNode?) -> Bool {
+    func isPalindrome(_ head: ListNode<Int>?) -> Bool {
         if head == nil || head?.next == nil{
             return true
         }
@@ -42,12 +42,13 @@ class LinkedListIsPalindrome {
                 l2 = l2?.next
             }
         }
-        
         return true
     }
     
-    func reverseLinkedNode(_ head: ListNode?) -> ListNode? {
-        var prev: ListNode? = nil
+    
+    
+    func reverseLinkedNode(_ head: ListNode<Int>?) -> ListNode<Int>? {
+        var prev: ListNode<Int>? = nil
         var curr: ListNode? = head
         
         while curr != nil {
