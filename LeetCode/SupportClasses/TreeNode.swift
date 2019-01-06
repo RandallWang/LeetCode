@@ -58,27 +58,75 @@ public class TreeNode<T:Equatable> {
 
 //MARK: - DFS iterative
     func iterative_PreOrderTraverse(root: TreeNode?) {
-        guard let root = root else {
-            print("root is nil")
-            return
-        }
-        
         var result:[T] = []
         
-        result.append(root.val)
-//        while  {
-//
-//        }
+        let stack: Stack<TreeNode> = Stack()
+        var node: TreeNode<T>? = root
+        
+        while node != nil || !stack.isEmpty() {
+            while node != nil {
+                result.append(node!.val)
+                stack.push(node!)
+                node = node?.left
+            }
+            
+            if !stack.isEmpty() {
+                node = stack.pop()
+                node = node?.right
+            }
+        }
+        
         print("iterative_PreOrderTraverse:\(result)")
     }
-//
-//    func (root: TreeNode?) {
-//
-//    }
-//
-//    func (root: TreeNode?) {
-//
-//    }
+
+    func iterative_InOrderTraverse(root: TreeNode?) {
+        var result:[T] = []
+        
+        let stack: Stack<TreeNode> = Stack()
+        var node: TreeNode<T>? = root
+
+        while node != nil || !stack.isEmpty() {
+            while node != nil {
+                stack.push(node!)
+                node = node?.left
+            }
+            
+            if !stack.isEmpty() {
+                node = stack.pop()
+                result.append(node!.val)
+                node = node?.right
+            }
+        }
+        
+        print("iterative_InOrderTraverse:\(result)")
+    }
+
+    func iterative_PostOrderTraverse(root: TreeNode?) {
+        var result:[T] = []
+        
+        let stack: Stack<TreeNode> = Stack()
+        var node: TreeNode<T>? = root
+        var lastVisited: TreeNode? = root
+        
+        while node != nil || !stack.isEmpty() {
+            while node != nil {
+                stack.push(node!)
+                node = node?.left
+            }
+            if !stack.isEmpty() {       //this node has no left node
+                let temp = stack.peak()!
+                if temp.right != nil && lastVisited != temp.right{
+                    node = temp.right
+                }else {                 //this node has no leaf node
+                    _ = stack.pop()
+                    result.append(temp.val)
+                    lastVisited = temp
+                }
+            }
+        }
+        
+        print("iterative_PostOrderTraverse:\(result)")
+    }
 
 
 //MARK: - BFS
@@ -104,6 +152,11 @@ extension TreeNode: Equatable {
             return false
         }
     }
+}
 
-
+extension TreeNode: CustomStringConvertible {
+    public var description: String {
+        let des = "\(val)\n          / \\   \n\(String(describing: left?.val)) \(String(describing: right?.val))"
+        return des
+    }
 }

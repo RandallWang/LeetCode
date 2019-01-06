@@ -22,4 +22,8 @@ class Stack<T: Equatable> {
     func peak() -> T? {
         return array.last
     }
+    
+    func isEmpty() -> Bool {
+        return array.isEmpty
+    }
 }
