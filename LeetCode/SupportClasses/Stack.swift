@@ -26,4 +26,8 @@ class Stack<T: Equatable> {
     func isEmpty() -> Bool {
         return array.isEmpty
     }
+    
+    func clear() {
+        array.removeAll()
+    }
 }

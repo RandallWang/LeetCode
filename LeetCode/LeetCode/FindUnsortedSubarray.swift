@@ -24,78 +24,25 @@ import Foundation
 
 class FindUnsortedSubarray {
     func findUnsortedSubarray(_ nums: [Int]) -> Int {
-        if nums.count == 1 {
-            return 0
+        var l: Int = nums.count
+        var r: Int = 0
+        
+        let stack: Stack<Int> = Stack()
+        for (index, num) in nums.enumerated() {
+            while !stack.isEmpty() && num < nums[stack.peak()!]{
+                l = min(l, stack.pop()!)
+            }
+            stack.push(index)
         }
         
-        var i = 0
-        var j = nums.count - 1
-        let max = nums.last!
-        let min = nums.first!
-        var n = 1
+        stack.clear()
         
-        while nums[j] >= nums[j-n] {
-            if nums[j] == nums[j-n] {
-                n += 1
-            }else {
-                n = 1
-                j -= 1
+        for index in (0 ..< nums.count).reversed(){
+            while !stack.isEmpty() && nums[index] > nums[stack.peak()!]{
+                r = max(r, stack.pop()!)
             }
-            
-            if j == 0 || n == nums.count{
-                return 0
-            }else if j - n < 0 {
-                break
-            }else {
-                if nums[j-n] > max {
-                    j = nums.count - 1
-                    break
-                }
-            }
+            stack.push(index)
         }
-        
-        if j - n >= 0 {
-            let temp1 =  nums[j-n]
-            
-            while nums[j] < temp1{
-                if j >= nums.count - 1 {
-                    break
-                }
-                j += 1
-            }
-        }
-        
-        n = 1
-        
-        while nums[i] <= nums[i + n] {
-            if nums[i] == nums[i + n] {
-                n += 1
-            }else {
-                n = 1
-                i += 1
-            }
-
-            if i + n >= nums.count || n == nums.count{
-                break
-            }else {
-                if nums[i+n] < min {
-                    i = 0
-                    break
-                }
-            }
-        }
-        
-        if i + n < nums.count {
-            let temp2 =  nums[i+n]
-            
-            while nums[i] > temp2{
-                if i <= 0 {
-                    break
-                }
-                i -= 1
-            }
-        }
-
-        return j - i + 1
+        return (r - l) > 0 ? r - l + 1 : 0
     }
 }
