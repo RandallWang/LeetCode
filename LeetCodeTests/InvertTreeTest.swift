@@ -30,7 +30,7 @@ class InvertTreeTest: XCTestCase {
         inputTree.left?.right = TreeNode.init(3)
         inputTree.right?.left = TreeNode.init(6)
         inputTree.right?.right = TreeNode.init(9)
-
+        
         let outputTree = TreeNode.init(4)
         outputTree.left = TreeNode.init(7)
         outputTree.right = TreeNode.init(2)

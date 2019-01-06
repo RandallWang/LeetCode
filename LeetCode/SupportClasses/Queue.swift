@@ -21,8 +21,13 @@ class Queue<T: Equatable> {
     
     func enQueue(item:T) {
         let node = ListNode.init(item)
-        rear?.next = node
-        rear = rear?.next
+        if head == nil {
+            head = node
+            rear = node
+        }else {
+            rear?.next = node
+            rear = rear?.next
+        }
     }
     
     func deQueue() -> T? {
@@ -35,6 +40,17 @@ class Queue<T: Equatable> {
     func length() -> Int {
         
         return 0
+    }
+    
+    func isEmpty() -> Bool {
+        if head == nil{
+            return true
+        }
+        return false
+    }
+    
+    func getHead() -> T? {
+        return head?.val
     }
 }
 

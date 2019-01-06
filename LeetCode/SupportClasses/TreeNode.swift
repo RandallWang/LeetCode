@@ -131,17 +131,29 @@ public class TreeNode<T:Equatable> {
 
 //MARK: - BFS
     func breadthFirstSearch(root: TreeNode?) {
+        if root == nil {
+            print("tree is nil")
+            return
+        }
+        let queue: Queue<TreeNode> = Queue()
         
-//        while <#condition#> {
-//            
-//        }
+        queue.enQueue(item: root!)
+        
+        while !queue.isEmpty() {
+            if let node = queue.getHead() {
+                print("\(String(describing: node.val))")
+                _ = queue.deQueue()
+                
+                if node.left != nil{
+                    queue.enQueue(item: node.left!)
+                }
+                
+                if node.right != nil {
+                    queue.enQueue(item: node.right!)
+                }
+            }
+        }
     }
-
-    func iterative_breadthFirstSearch(root: TreeNode?) {
-        let queue: Queue<T> = Queue.init()
-//        queue.enQueue(item: root?.val)
-    }
-    
 }
 
 extension TreeNode: Equatable {
