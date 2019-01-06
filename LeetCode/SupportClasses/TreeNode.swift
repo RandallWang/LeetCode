@@ -24,42 +24,53 @@ public class TreeNode<T:Equatable> {
     }
     
 //MARK: - DFS recursive
-    func DFS_PreOrderTraverse(root: TreeNode?) {
+    func recursive_PreOrderTraverse(root: TreeNode?) {
         guard let root = root else{
             return
         }
 
         print("\(root.val)")
-        DFS_PreOrderTraverse(root: root.left)
-        DFS_PreOrderTraverse(root: root.right)
+        recursive_PreOrderTraverse(root: root.left)
+        recursive_PreOrderTraverse(root: root.right)
     }
     
     
-    func DFS_InOrderTraverse(root: TreeNode?) {
+    func recursive_InOrderTraverse(root: TreeNode?) {
         guard let root = root else{
             return
         }
         
-        DFS_InOrderTraverse(root: root.left)
+        recursive_InOrderTraverse(root: root.left)
         print("\(root.val)")
-        DFS_InOrderTraverse(root: root.right)
+        recursive_InOrderTraverse(root: root.right)
     }
     
     
-    func DFS_PostOrderTraverse(root: TreeNode?) {
+    func recursive_PostOrderTraverse(root: TreeNode?) {
         guard let root = root else{
             return
         }
         
-        DFS_PostOrderTraverse(root: root.left)
-        DFS_PostOrderTraverse(root: root.right)
+        recursive_PostOrderTraverse(root: root.left)
+        recursive_PostOrderTraverse(root: root.right)
         print("\(root.val)")
     }
 
 //MARK: - DFS iterative
-//    func (root: TreeNode?) {
+    func iterative_PreOrderTraverse(root: TreeNode?) {
+        guard let root = root else {
+            print("root is nil")
+            return
+        }
+        
+        var result:[T] = []
+        
+        result.append(root.val)
+//        while  {
 //
-//    }
+//        }
+        print("iterative_PreOrderTraverse:\(result)")
+    }
 //
 //    func (root: TreeNode?) {
 //
@@ -80,7 +91,7 @@ public class TreeNode<T:Equatable> {
 
     func iterative_breadthFirstSearch(root: TreeNode?) {
         let queue: Queue<T> = Queue.init()
-        
+//        queue.enQueue(item: root?.val)
     }
     
 }
