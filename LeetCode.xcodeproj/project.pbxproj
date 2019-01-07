@@ -51,6 +51,11 @@
 		B1B91E1A21D0C0790011DBB6 /* Leaf-Similar Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91E1921D0C0790011DBB6 /* Leaf-Similar Trees.swift */; };
 		B1B91E1C21D0C0880011DBB6 /* Leaf-Similar Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91E1B21D0C0880011DBB6 /* Leaf-Similar Trees.swift */; };
 		B1B91E1F21D0C64D0011DBB6 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B91E1E21D0C64D0011DBB6 /* TreeNode.swift */; };
+		B1CF67E921E2393B003D8E24 /* ThirdMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF67E821E2393B003D8E24 /* ThirdMax.swift */; };
+		B1CF67EB21E2399C003D8E24 /* ThirdMaxTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF67EA21E2399C003D8E24 /* ThirdMaxTest.swift */; };
+		B1CF67ED21E31923003D8E24 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF67EC21E31923003D8E24 /* Sort.swift */; };
+		B1CF67EF21E32491003D8E24 /* SortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF67EE21E32491003D8E24 /* SortTest.swift */; };
+		B1CF67F121E37EE0003D8E24 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF67F021E37EE0003D8E24 /* Heap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +117,11 @@
 		B1B91E1921D0C0790011DBB6 /* Leaf-Similar Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaf-Similar Trees.swift"; sourceTree = "<group>"; };
 		B1B91E1B21D0C0880011DBB6 /* Leaf-Similar Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaf-Similar Trees.swift"; sourceTree = "<group>"; };
 		B1B91E1E21D0C64D0011DBB6 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		B1CF67E821E2393B003D8E24 /* ThirdMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdMax.swift; sourceTree = "<group>"; };
+		B1CF67EA21E2399C003D8E24 /* ThirdMaxTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdMaxTest.swift; sourceTree = "<group>"; };
+		B1CF67EC21E31923003D8E24 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		B1CF67EE21E32491003D8E24 /* SortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
+		B1CF67F021E37EE0003D8E24 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,10 +192,12 @@
 				B1A3C2A321D603EB00C9E0BD /* InvertTreeTest.swift */,
 				B1A3C2A921D637AF00C9E0BD /* Jewels&StonesTest.swift */,
 				B1A3C2AF21D8826D00C9E0BD /* LinkedListDeleteDuplicatesTest.swift */,
+				B1CF67EA21E2399C003D8E24 /* ThirdMaxTest.swift */,
 				B1A3C2B721DA1F7600C9E0BD /* UniqueEmailAddressesTest.swift */,
 				B1A3C2B321D9CB4600C9E0BD /* LinkedListIsPalindromeTest.swift */,
 				B1A3C2BF21DD092900C9E0BD /* HammingDistanceTest.swift */,
 				B1A3C2C321DE5DA300C9E0BD /* FindUnsortedSubarrayTest.swift */,
+				B1CF67EE21E32491003D8E24 /* SortTest.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -194,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				B18E18CC217C241B005E97CE /* TwoSum.swift */,
+				B1CF67E821E2393B003D8E24 /* ThirdMax.swift */,
 				B18E18CE217C2509005E97CE /* TwoSumII.swift */,
 				B1B91DDF21CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift */,
 				B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */,
@@ -211,6 +224,7 @@
 				B1A3C2B921DC50DD00C9E0BD /* MaxProfit.swift */,
 				B1A3C2BD21DD08A900C9E0BD /* HammingDistance.swift */,
 				B1A3C2C121DE5D6C00C9E0BD /* FindUnsortedSubarray.swift */,
+				B1CF67EC21E31923003D8E24 /* Sort.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -222,6 +236,7 @@
 				B1A3C29921D5150500C9E0BD /* ListNode.swift */,
 				B1A3C2C521E099FF00C9E0BD /* Queue.swift */,
 				B1A3C2C721E1A8A300C9E0BD /* Stack.swift */,
+				B1CF67F021E37EE0003D8E24 /* Heap.swift */,
 			);
 			path = SupportClasses;
 			sourceTree = "<group>";
@@ -338,12 +353,14 @@
 				B1B91DE021CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift in Sources */,
 				B1A3C23C21D36FF400C9E0BD /* IsSubtree.swift in Sources */,
 				B18E18CD217C241B005E97CE /* TwoSum.swift in Sources */,
+				B1CF67E921E2393B003D8E24 /* ThirdMax.swift in Sources */,
 				B1A3C29A21D5150500C9E0BD /* ListNode.swift in Sources */,
 				B1A3C2A621D61D4900C9E0BD /* Network Delay Time.swift in Sources */,
 				B1A3C23621D3208C00C9E0BD /* Search in a Binary Search Tree.swift in Sources */,
 				B1A3C2B221D9CAF500C9E0BD /* LinkedListIsPalindrome.swift in Sources */,
 				B1A3C2AE21D87F6B00C9E0BD /* LinkedListDeleteDuplicates.swift in Sources */,
 				B1A3C2C221DE5D6C00C9E0BD /* FindUnsortedSubarray.swift in Sources */,
+				B1CF67F121E37EE0003D8E24 /* Heap.swift in Sources */,
 				B1A3C2B621DA1F5200C9E0BD /* Unique Email Addresses.swift in Sources */,
 				B1A3C2A821D6379800C9E0BD /* Jewels and Stones.swift in Sources */,
 				B1B91E1F21D0C64D0011DBB6 /* TreeNode.swift in Sources */,
@@ -351,6 +368,7 @@
 				B1A3C2A021D528D200C9E0BD /* MergeTwoSortedLists.swift in Sources */,
 				B1A3C29C21D515E700C9E0BD /* ReverseList.swift in Sources */,
 				B1A3C2C621E099FF00C9E0BD /* Queue.swift in Sources */,
+				B1CF67ED21E31923003D8E24 /* Sort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +380,8 @@
 				B1A3C2B821DA1F7600C9E0BD /* UniqueEmailAddressesTest.swift in Sources */,
 				B1A3C2BC21DC50F300C9E0BD /* MaxProfitTest.swift in Sources */,
 				B1A3C29E21D515FC00C9E0BD /* ReverseListTest.swift in Sources */,
+				B1CF67EF21E32491003D8E24 /* SortTest.swift in Sources */,
+				B1CF67EB21E2399C003D8E24 /* ThirdMaxTest.swift in Sources */,
 				B18E18D1217C3695005E97CE /* TwoSumIITest.swift in Sources */,
 				B1B91DE221CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift in Sources */,
 				B1A3C2B021D8826D00C9E0BD /* LinkedListDeleteDuplicatesTest.swift in Sources */,
