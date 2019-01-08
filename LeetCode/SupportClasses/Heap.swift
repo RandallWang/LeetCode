@@ -23,6 +23,14 @@ class Heap<T:Comparable> {
         return heapArray.count
     }
     
+    func peek() -> T? {
+        return heapArray.first
+    }
+    
+    func isEmpty() -> Bool {
+        return heapArray.count == 0
+    }
+    
     
     // return Next Node,The Bigger one
     func orderNode(_ i:Int, toIndex bound:Int) -> Int{
@@ -54,7 +62,7 @@ class Heap<T:Comparable> {
     }
     
     func heapify(toIndex:Int) {
-        if toIndex == 1 {
+        if toIndex < 2 {
             return
         }
         if toIndex == 2 && heapArray[0] < heapArray[1]{
@@ -73,6 +81,12 @@ class Heap<T:Comparable> {
         }
     }
     
+    func delete(index:Int) -> T? {
+        let first = heapArray.removeFirst()
+        heapify()
+        return first
+    }
+    
 }
 
 extension Heap: CustomStringConvertible {
@@ -80,7 +94,7 @@ extension Heap: CustomStringConvertible {
         var des = ""
         var i = 1
         var j = 1
-        while j < heapArray.count {
+        while j <= heapArray.count {
             while j < Int(pow(Double(2), Double(i))) && j <= heapArray.count{
                 des = des + "\(heapArray[j - 1])"
                 j += 1

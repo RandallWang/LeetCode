@@ -33,6 +33,24 @@ Both numbers with value 2 are both considered as second maximum.
 
 class thirdMax {
     func thirdMax(_ nums: [Int]) -> Int {
-        return 0
+        let heap = Heap.init(array: nums, sort: <)
+        
+        let temp = heap.peek()
+        var max = temp
+        var count = 1
+
+        while count < 3 {
+            if heap.isEmpty() {
+                return temp!
+            }
+            if max == heap.peek(){
+                _ = heap.delete(index: 1)
+                continue
+            }else {
+                max = heap.delete(index: 1)
+                count += 1
+            }
+        }
+        return max!
     }
 }

@@ -52,11 +52,15 @@ class Sort<T:Comparable> {
     func shellSort(_ sortArray:inout [T]) {
         
     }
-    
-    func mergeSort(_ sortArray:inout [T]) {
+        
+    func iterative_mergeSort(_ sortArray:inout [T]) {
         
     }
-    
+
+    func recursive_mergeSort(_ sortArray:inout [T]) {
+        
+    }
+
     func heapSort(_ sortArray:inout [T]) {// i root node,2i left node, 2i+1 right node, use max-heap to sort array ascendingly, i starts from 1
         let heap = Heap.init(array: sortArray, sort: < )
         
@@ -71,5 +75,20 @@ class Sort<T:Comparable> {
     func quickSort(_ sortArray:inout [T]) {
         
     }
+}
 
+extension Sort{
+    func mergeTwoArray(a:[T], b:[T]) -> [T] {
+        var result:[T] = []
+        var i:Int = 0
+        var j:Int = 0
+        
+        while i < result.count {
+            result.append(a[i])
+            i += 1
+        }
+        
+        j += 1
+        return result
+    }
 }
