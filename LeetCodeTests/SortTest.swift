@@ -47,13 +47,19 @@ class SortTest: XCTestCase {
     }
     
     func testHeapSort() {
-        var example = [9, 1, 5, 8, 3, 7, 2, 4, 6]
-        test.heapSort(&example)
+        let example = [9, 1, 5, 8, 3, 7, 2, 4, 6]
+        let result = test.heapSort(example)
         
-        XCTAssertEqual(example, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+        XCTAssertEqual(result, [1, 2, 3, 4, 5, 6, 7, 8, 9])
     }
 
 
+    func testQuickSort() {
+        var example = [9, 1, 5, 8, 3, 7, 2, 4, 6]
+        test.recursive_quickSort(&example)
+        
+        XCTAssertEqual(example, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

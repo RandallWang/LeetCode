@@ -56,6 +56,7 @@
 		B1CF67ED21E31923003D8E24 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF67EC21E31923003D8E24 /* Sort.swift */; };
 		B1CF67EF21E32491003D8E24 /* SortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF67EE21E32491003D8E24 /* SortTest.swift */; };
 		B1CF67F121E37EE0003D8E24 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF67F021E37EE0003D8E24 /* Heap.swift */; };
+		B1CF67F321E4981E003D8E24 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CF67F221E4981E003D8E24 /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		B1CF67EC21E31923003D8E24 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		B1CF67EE21E32491003D8E24 /* SortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
 		B1CF67F021E37EE0003D8E24 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		B1CF67F221E4981E003D8E24 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 				B1A3C2C521E099FF00C9E0BD /* Queue.swift */,
 				B1A3C2C721E1A8A300C9E0BD /* Stack.swift */,
 				B1CF67F021E37EE0003D8E24 /* Heap.swift */,
+				B1CF67F221E4981E003D8E24 /* LinkedList.swift */,
 			);
 			path = SupportClasses;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				B18E18AA217C238D005E97CE /* AppDelegate.swift in Sources */,
 				B1A3C2C821E1A8A300C9E0BD /* Stack.swift in Sources */,
 				B18E18CF217C2509005E97CE /* TwoSumII.swift in Sources */,
+				B1CF67F321E4981E003D8E24 /* LinkedList.swift in Sources */,
 				B1A3C2BE21DD08A900C9E0BD /* HammingDistance.swift in Sources */,
 				B1B91DE421CF4EEA0011DBB6 /* ShortestCompetingWorld.swift in Sources */,
 				B1B91DE021CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift in Sources */,

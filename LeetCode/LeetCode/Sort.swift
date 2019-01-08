@@ -61,7 +61,7 @@ class Sort<T:Comparable> {
         
     }
 
-    func heapSort(_ sortArray:inout [T]) {// i root node,2i left node, 2i+1 right node, use max-heap to sort array ascendingly, i starts from 1
+    func heapSort(_ sortArray:[T]) -> [T]{// i root node,2i left node, 2i+1 right node, use max-heap to sort array ascendingly, i starts from 1
         let heap = Heap.init(array: sortArray, sort: < )
         
         for j in (2 ... sortArray.count).reversed() {
@@ -69,11 +69,15 @@ class Sort<T:Comparable> {
             heap.heapify(toIndex:j-1)
         }
         
-        sortArray = heap.heapArray
+        return heap.heapArray
     }
     
-    func quickSort(_ sortArray:inout [T]) {
+    func iterative_quickSort(_ sortArray:inout [T]) {
         
+    }
+    
+    func recursive_quickSort(_ sortArray:inout [T]) {
+        quickSort(sortArray: &sortArray, leftIndex: 0, rightIndex: sortArray.count - 1)
     }
 }
 
@@ -90,5 +94,35 @@ extension Sort{
         
         j += 1
         return result
+    }
+    
+    func quickSort(sortArray:inout [T], leftIndex:Int, rightIndex:Int) {
+        if leftIndex < rightIndex {
+            let pivot = partition(sortArray: &sortArray, leftIndex: leftIndex, rightIndex: rightIndex)
+            
+            quickSort(sortArray: &sortArray, leftIndex: leftIndex, rightIndex: pivot - 1)
+            quickSort(sortArray: &sortArray, leftIndex: pivot + 1, rightIndex: rightIndex)
+        }
+    }
+    
+    func partition(sortArray:inout [T], leftIndex:Int, rightIndex:Int) -> Int {
+        var leftIndex = leftIndex
+        var rightIndex = rightIndex
+        
+        while leftIndex < rightIndex {
+            let pivot = sortArray[leftIndex]
+
+            while sortArray[rightIndex] >= pivot && leftIndex < rightIndex {
+                rightIndex -= 1
+            }
+            sortArray.swapAt(leftIndex, rightIndex)//sortArray[rightIndex] < pivot
+            
+            while sortArray[leftIndex] <= pivot && leftIndex < rightIndex {
+                leftIndex += 1
+            }
+            sortArray.swapAt(leftIndex, rightIndex)//sortArray[leftIndex] > pivot
+        }
+        
+        return leftIndex
     }
 }
