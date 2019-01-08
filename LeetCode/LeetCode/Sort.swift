@@ -60,32 +60,12 @@ class Sort<T:Comparable> {
     func heapSort(_ sortArray:inout [T]) {// i root node,2i left node, 2i+1 right node, use max-heap to sort array ascendingly, i starts from 1
         let heap = Heap.init(array: sortArray, sort: < )
         
-        
-        for j in (0 ..< sortArray.count).reversed() {
-            sortArray.swapAt(0, j)
-            adjustHeap(&sortArray, 0, j-1)
-        }
-    }
-    
-    func adjustHeap(_ heapArray:inout [T],_ fromIndex: Int,_ toIndex: Int) {//以树为准，后面涉及array index，统一减一
-        var tempMax = heapArray[fromIndex]
-
-        var i = fromIndex * 2
-
-        while i <= toIndex {
-            if i < toIndex && heapArray[i] < heapArray[i+1] {   //j < m make sure i+1 is not overflow,
-                i += 1                                          //pick the bigger leaf node
-            }
-            
-            if tempMax > heapArray[i]{
-                break
-            }
-            
-            heapArray[fromIndex] = heapArray[i]
-            i = i * 2
+        for j in (2 ... sortArray.count).reversed() {
+            heap.swapAt(1, j)
+            heap.heapify(toIndex:j-1)
         }
         
-        heapArray[fromIndex] = tempMax
+        sortArray = heap.heapArray
     }
     
     func quickSort(_ sortArray:inout [T]) {

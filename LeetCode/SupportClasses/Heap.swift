@@ -9,7 +9,7 @@
 import Foundation
 
 class Heap<T:Comparable> {
-    private var heapArray:[T] = []
+    var heapArray:[T] = []
 //    private let orderCriteria: (T, T) -> Bool
 
     
@@ -25,12 +25,12 @@ class Heap<T:Comparable> {
     
     
     // return Next Node,The Bigger one
-    func orderNode(_ i:Int) -> Int{
+    func orderNode(_ i:Int, toIndex bound:Int) -> Int{
         let temp:T = heapArray[i - 1]
         
         var index = i * 2
 
-        if index < heapArray.count && heapArray[index - 1] < heapArray[index] {
+        if index < bound && heapArray[index - 1] < heapArray[index] {
             index += 1
         }
         
@@ -45,15 +45,34 @@ class Heap<T:Comparable> {
 
     
     func heapify() {
-        print(self)
-        for i in (1 ... heapArray.count/2).reversed() {//find all parent node
+        heapify(toIndex:heapArray.count)
+    }
+    
+    func swapAt(_ i: Int, _ j:Int) {
+        heapArray.swapAt(i-1, j-1)
+        print(heapArray)
+    }
+    
+    func heapify(toIndex:Int) {
+        if toIndex == 1 {
+            return
+        }
+        if toIndex == 2 && heapArray[0] < heapArray[1]{
+            let temp = heapArray[0]
+            heapArray[0] = heapArray[1]
+            heapArray[1] = temp
+            return
+        }
+        
+        
+        for i in (1 ... toIndex/2).reversed() {//find all parent node
             var index = i
-            while index * 2 <= heapArray.count && index != 0 {
-                index = orderNode(index)
+            while index * 2 <= toIndex && index != 0 {
+                index = orderNode(index, toIndex:toIndex)
             }
         }
-        print(self)
     }
+    
 }
 
 extension Heap: CustomStringConvertible {
