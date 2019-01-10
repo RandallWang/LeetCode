@@ -19,6 +19,48 @@ public class TreeNode<T:Equatable> {
         self.right = nil
     }
     
+    public init(_ BFSArray: [T?]) {
+        var BFSArray = BFSArray
+        if let firstVal = BFSArray.first {
+            self.val = firstVal!
+            self.left = nil
+            self.right = nil
+            BFSArray.removeFirst()
+        }else {
+            fatalError("Input ERROR, First Item is nil")
+        }
+        let queue:Queue<TreeNode> = Queue.init()
+        
+        var tempNode:TreeNode<T> = self
+        var count = 0
+        for (_, val) in BFSArray.enumerated() {
+            let newNode: TreeNode?
+            if let val = val {
+                newNode = TreeNode.init(val)
+                queue.enQueue(item: newNode!)
+            }else {
+                newNode = nil
+            }
+            
+            switch count {
+            case 0:
+                tempNode.left = newNode
+            case 1:
+                tempNode.right = newNode
+                count = 0
+                if let next = queue.deQueue() {
+                    tempNode = next
+                    continue
+                }else {
+                    return
+                }
+            default:
+                fatalError("Method ERROR")
+            }
+            count += 1
+        }
+    }
+    
     func height() -> Int {
         return 0
     }
