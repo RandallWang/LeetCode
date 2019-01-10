@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1075CAD21E7753D0088DFE1 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CAC21E7753D0088DFE1 /* LinkedListTest.swift */; };
 		B18E18AA217C238D005E97CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18A9217C238D005E97CE /* AppDelegate.swift */; };
 		B18E18AC217C238D005E97CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18AB217C238D005E97CE /* ViewController.swift */; };
 		B18E18AF217C238D005E97CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E18AD217C238D005E97CE /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1075CAC21E7753D0088DFE1 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		B18E18A6217C238D005E97CE /* LeetCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18E18A9217C238D005E97CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18E18AB217C238D005E97CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				B1A3C2BF21DD092900C9E0BD /* HammingDistanceTest.swift */,
 				B1A3C2C321DE5DA300C9E0BD /* FindUnsortedSubarrayTest.swift */,
 				B1CF67EE21E32491003D8E24 /* SortTest.swift */,
+				B1075CAC21E7753D0088DFE1 /* LinkedListTest.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				B1B91E1C21D0C0880011DBB6 /* Leaf-Similar Trees.swift in Sources */,
 				B1A3C2A221D5290000C9E0BD /* MergeTwoListsTest.swift in Sources */,
 				B1B91DE621CF4F060011DBB6 /* ShortestCompetingWorldTest.swift in Sources */,
+				B1075CAD21E7753D0088DFE1 /* LinkedListTest.swift in Sources */,
 				B1A3C23E21D3700D00C9E0BD /* IsSubtreeTest.swift in Sources */,
 				B1A3C2A421D603EB00C9E0BD /* InvertTreeTest.swift in Sources */,
 				B18E18CA217C23BA005E97CE /* TwoSumTests.swift in Sources */,

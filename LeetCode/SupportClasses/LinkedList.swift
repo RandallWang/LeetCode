@@ -36,44 +36,128 @@ import Foundation
  */
 
 class MyLinkedList {
-    
+    var head: ListNode<Int>?
+    var tail: ListNode<Int>?
     /** Initialize your data structure here. */
     init() {
-        
+        head = nil
+        tail = nil
     }
     
     /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
     func get(_ index: Int) -> Int {
-        return 0
+        var count = 0
+        var node = head
+        while node != nil  {
+            if index == count {
+                return (node?.val)!
+            }else {
+                node = node?.next
+                count += 1
+            }
+        }
+        
+        return -1
     }
     
     /** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */
     func addAtHead(_ val: Int) {
-        
+        let newNode = ListNode.init(val)
+        if head == nil {
+            head = newNode
+            tail = newNode
+        }else {
+            newNode.next = head
+            head = newNode
+        }
     }
     
     /** Append a node of value val to the last element of the linked list. */
     func addAtTail(_ val: Int) {
-        
+        let newNode = ListNode.init(val)
+        if tail == nil {
+            head = newNode
+            tail = newNode
+        }else {
+            tail?.next = newNode
+            tail = tail?.next
+        }
     }
     
     /** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
     func addAtIndex(_ index: Int, _ val: Int) {
+        if head == nil {
+            if index == 0 {
+                let newNode = ListNode.init(val)
+                
+                head = newNode
+                tail = newNode
+            }else {
+                return
+            }
+        }
         
+        var count = 0
+        var node = head
+        var prev: ListNode<Int>? = nil
+        
+        while prev != nil || node != nil{
+            if index == count {
+                let newNode = ListNode.init(val)
+
+                prev?.next = newNode
+                newNode.next = node
+                
+                if node == nil {//reach the end
+                    tail = newNode
+                }
+
+                break
+            }else {
+                prev = node
+                node = node?.next
+                count += 1
+            }
+        }
+        assert(tail?.next == nil)
     }
     
     /** Delete the index-th node in the linked list, if the index is valid. */
     func deleteAtIndex(_ index: Int) {
-        
+        var count = 0
+        var node = head
+        var prev: ListNode<Int>? = nil
+
+        while node != nil  {
+            if index == count {
+                prev?.next = node?.next
+                if prev?.next == nil {//reach the end
+                    tail = prev
+                }
+                break
+            }else {
+                prev = node
+                node = node?.next
+                count += 1
+            }
+        }
     }
 }
 
-/**
- * Your MyLinkedList object will be instantiated and called as such:
- * let obj = MyLinkedList()
- * let ret_1: Int = obj.get(index)
- * obj.addAtHead(val)
- * obj.addAtTail(val)
- * obj.addAtIndex(index, val)
- * obj.deleteAtIndex(index)
- */
+
+extension MyLinkedList: CustomStringConvertible {
+    public var description: String {
+        guard let head = head else { return "list is empty" }
+        var linkedListDes = "\(head.val)"
+        
+        var temp: ListNode? = self.head
+        
+        while let next = temp?.next {
+            linkedListDes.append(" -> \(next.val)")
+            temp = next
+        }
+        
+        return "\(type(of: self)): \(linkedListDes)"
+    }
+    
+}

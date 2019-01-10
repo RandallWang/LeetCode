@@ -43,7 +43,7 @@ extension ListNode: CustomStringConvertible {
             temp = next
         }
         
-        return "<\(type(of: self)): \(linkedListDes)>"
+        return "\(type(of: self)): \(linkedListDes)"
     }
 }
 
