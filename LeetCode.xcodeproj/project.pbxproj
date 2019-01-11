@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B1075CAD21E7753D0088DFE1 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CAC21E7753D0088DFE1 /* LinkedListTest.swift */; };
+		B1075CAF21E8BFA40088DFE1 /* Reverse String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CAE21E8BFA40088DFE1 /* Reverse String.swift */; };
+		B1075CB121E8C21C0088DFE1 /* ReverseStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CB021E8C21C0088DFE1 /* ReverseStringTest.swift */; };
 		B18E18AA217C238D005E97CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18A9217C238D005E97CE /* AppDelegate.swift */; };
 		B18E18AC217C238D005E97CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18AB217C238D005E97CE /* ViewController.swift */; };
 		B18E18AF217C238D005E97CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E18AD217C238D005E97CE /* Main.storyboard */; };
@@ -72,6 +74,8 @@
 
 /* Begin PBXFileReference section */
 		B1075CAC21E7753D0088DFE1 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
+		B1075CAE21E8BFA40088DFE1 /* Reverse String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reverse String.swift"; sourceTree = "<group>"; };
+		B1075CB021E8C21C0088DFE1 /* ReverseStringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseStringTest.swift; sourceTree = "<group>"; };
 		B18E18A6217C238D005E97CE /* LeetCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18E18A9217C238D005E97CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18E18AB217C238D005E97CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 				B1A3C2C321DE5DA300C9E0BD /* FindUnsortedSubarrayTest.swift */,
 				B1CF67EE21E32491003D8E24 /* SortTest.swift */,
 				B1075CAC21E7753D0088DFE1 /* LinkedListTest.swift */,
+				B1075CB021E8C21C0088DFE1 /* ReverseStringTest.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				B1A3C2BD21DD08A900C9E0BD /* HammingDistance.swift */,
 				B1A3C2C121DE5D6C00C9E0BD /* FindUnsortedSubarray.swift */,
 				B1CF67EC21E31923003D8E24 /* Sort.swift */,
+				B1075CAE21E8BFA40088DFE1 /* Reverse String.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -368,6 +374,7 @@
 				B1A3C2AE21D87F6B00C9E0BD /* LinkedListDeleteDuplicates.swift in Sources */,
 				B1A3C2C221DE5D6C00C9E0BD /* FindUnsortedSubarray.swift in Sources */,
 				B1CF67F121E37EE0003D8E24 /* Heap.swift in Sources */,
+				B1075CAF21E8BFA40088DFE1 /* Reverse String.swift in Sources */,
 				B1A3C2B621DA1F5200C9E0BD /* Unique Email Addresses.swift in Sources */,
 				B1A3C2A821D6379800C9E0BD /* Jewels and Stones.swift in Sources */,
 				B1B91E1F21D0C64D0011DBB6 /* TreeNode.swift in Sources */,
@@ -389,6 +396,7 @@
 				B1A3C29E21D515FC00C9E0BD /* ReverseListTest.swift in Sources */,
 				B1CF67EF21E32491003D8E24 /* SortTest.swift in Sources */,
 				B1CF67EB21E2399C003D8E24 /* ThirdMaxTest.swift in Sources */,
+				B1075CB121E8C21C0088DFE1 /* ReverseStringTest.swift in Sources */,
 				B18E18D1217C3695005E97CE /* TwoSumIITest.swift in Sources */,
 				B1B91DE221CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift in Sources */,
 				B1A3C2B021D8826D00C9E0BD /* LinkedListDeleteDuplicatesTest.swift in Sources */,
