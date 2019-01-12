@@ -13,6 +13,7 @@ class Queue<T: Equatable> {
     typealias LNode = ListNode<T>
     private var head: LNode?
     private var rear: LNode?
+    private var count = 0
 
     init() {
         head = nil
@@ -21,6 +22,7 @@ class Queue<T: Equatable> {
     
     func enQueue(item:T) {
         let node = ListNode.init(item)
+        count += 1
         if head == nil {
             head = node
             rear = node
@@ -31,15 +33,17 @@ class Queue<T: Equatable> {
     }
     
     func deQueue() -> T? {
-        let temp = head
-        head = head?.next
-        
-        return temp?.val
+        if let temp = head {
+            head = temp.next
+            count -= 1
+            return temp.val
+        }else {
+            return nil
+        }
     }
     
     func length() -> Int {
-        
-        return 0
+        return count
     }
     
     func isEmpty() -> Bool {
