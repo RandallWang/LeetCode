@@ -27,26 +27,16 @@ import Foundation
  */
 
 class ConvertBSTtoGreaterTree {
+    private var sum: Int = 0
+    
     func convertBST(_ root: TreeNode<Int>?) -> TreeNode<Int>? {
-        guard let root = root else { return nil }
-        
-        guard let left = root.left,let right = root.right else {
-            let nodeZero = TreeNode.init(0)
-            root.left?.val = root.val + (root.left ?? nodeZero).val + (root.right ?? nodeZero).val
-            root.val = root.val + (root.right ?? nodeZero).val
-            return root
+        if let root = root{
+            _ = convertBST(root.right)
+            sum += root.val
+            
+            root.val = sum
+            _ = convertBST(root.left)
         }
-        
-        if left.left != nil || left.right != nil {
-            root.left = convertBST(root.left)
-        }
-        
-        if right.left != nil || right.right != nil {
-            root.right = convertBST(root.right)
-        }
-        
-        left.val = root.val + left.val + right.val
-        root.val = root.val + right.val
 
         return root
     }

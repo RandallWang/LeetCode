@@ -21,16 +21,24 @@ class ConvertBSTtoGreaterTreeTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testExample1() {
         let treeNode:TreeNode<Int> = TreeNode.init([5,2,13])
         let target:TreeNode<Int> = TreeNode.init([18,20,13])
         
         let result = test.convertBST(treeNode)
         
         XCTAssertEqual(result, target)
-        
     }
 
+    func testExample2() {
+        let treeNode:TreeNode<Int> = TreeNode.init([2,0,3,-4,1])
+        let target:TreeNode<Int> = TreeNode.init([5,6,3,2,6])
+        
+        let result = test.convertBST(treeNode)
+        
+        XCTAssertEqual(result, target)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
