@@ -13,6 +13,9 @@
 		B1075CB321E8CF950088DFE1 /* Reverse Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CB221E8CF950088DFE1 /* Reverse Integer.swift */; };
 		B1075CB521E8CFF30088DFE1 /* ReverseIntegerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CB421E8CFF30088DFE1 /* ReverseIntegerTest.swift */; };
 		B1075CB721ED7A210088DFE1 /* Merge Two Binary Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CB621ED7A210088DFE1 /* Merge Two Binary Trees.swift */; };
+		B1075CB921F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CB821F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift */; };
+		B1075CBB21F1CDF70088DFE1 /* MergeTreesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CBA21F1CDF70088DFE1 /* MergeTreesTest.swift */; };
+		B1075CBD21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CBC21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift */; };
 		B18E18AA217C238D005E97CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18A9217C238D005E97CE /* AppDelegate.swift */; };
 		B18E18AC217C238D005E97CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18AB217C238D005E97CE /* ViewController.swift */; };
 		B18E18AF217C238D005E97CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E18AD217C238D005E97CE /* Main.storyboard */; };
@@ -82,6 +85,9 @@
 		B1075CB221E8CF950088DFE1 /* Reverse Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reverse Integer.swift"; sourceTree = "<group>"; };
 		B1075CB421E8CFF30088DFE1 /* ReverseIntegerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseIntegerTest.swift; sourceTree = "<group>"; };
 		B1075CB621ED7A210088DFE1 /* Merge Two Binary Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Merge Two Binary Trees.swift"; sourceTree = "<group>"; };
+		B1075CB821F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBSTtoGreaterTree.swift; sourceTree = "<group>"; };
+		B1075CBA21F1CDF70088DFE1 /* MergeTreesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTreesTest.swift; sourceTree = "<group>"; };
+		B1075CBC21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBSTtoGreaterTreeTest.swift; sourceTree = "<group>"; };
 		B18E18A6217C238D005E97CE /* LeetCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18E18A9217C238D005E97CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18E18AB217C238D005E97CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +221,8 @@
 				B1075CAC21E7753D0088DFE1 /* LinkedListTest.swift */,
 				B1075CB021E8C21C0088DFE1 /* ReverseStringTest.swift */,
 				B1075CB421E8CFF30088DFE1 /* ReverseIntegerTest.swift */,
+				B1075CBA21F1CDF70088DFE1 /* MergeTreesTest.swift */,
+				B1075CBC21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 				B1075CB221E8CF950088DFE1 /* Reverse Integer.swift */,
 				B1A3C29F21D528D200C9E0BD /* MergeTwoSortedLists.swift */,
 				B1A3C2A521D61D4900C9E0BD /* Network Delay Time.swift */,
+				B1075CB821F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift */,
 				B1A3C2A721D6379800C9E0BD /* Jewels and Stones.swift */,
 				B1A3C2AD21D87F6B00C9E0BD /* LinkedListDeleteDuplicates.swift */,
 				B1A3C2B121D9CAF500C9E0BD /* LinkedListIsPalindrome.swift */,
@@ -394,6 +403,7 @@
 				B1A3C29C21D515E700C9E0BD /* ReverseList.swift in Sources */,
 				B1A3C2C621E099FF00C9E0BD /* Queue.swift in Sources */,
 				B1CF67ED21E31923003D8E24 /* Sort.swift in Sources */,
+				B1075CB921F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +420,8 @@
 				B1075CB121E8C21C0088DFE1 /* ReverseStringTest.swift in Sources */,
 				B18E18D1217C3695005E97CE /* TwoSumIITest.swift in Sources */,
 				B1B91DE221CCEA8F0011DBB6 /* RemoveDuplicatesFromSortedArray.swift in Sources */,
+				B1075CBD21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift in Sources */,
+				B1075CBB21F1CDF70088DFE1 /* MergeTreesTest.swift in Sources */,
 				B1075CB521E8CFF30088DFE1 /* ReverseIntegerTest.swift in Sources */,
 				B1A3C2B021D8826D00C9E0BD /* LinkedListDeleteDuplicatesTest.swift in Sources */,
 				B1A3C2AA21D637AF00C9E0BD /* Jewels&StonesTest.swift in Sources */,

@@ -37,6 +37,8 @@ import Foundation
  */
 
 class MergeTwoBinaryTrees {
+    
+    //Using Recursion
     func mergeTrees1(_ t1: TreeNode<Int>?, _ t2: TreeNode<Int>?) -> TreeNode<Int>? {
         guard let t1 = t1 else {
             return t2
@@ -50,6 +52,39 @@ class MergeTwoBinaryTrees {
         
         t1.left = mergeTrees1(t1.left, t2.left)
         t1.right = mergeTrees1(t1.right, t2.right)
+        
+        return t1
+    }
+    
+    //Using Iterative
+    func mergeTrees2(_ t1: TreeNode<Int>?, _ t2: TreeNode<Int>?) -> TreeNode<Int>? {
+        if t1 == nil {
+            return t2
+        }
+        let stack: Stack<[TreeNode<Int>?]> = Stack()
+        stack.push([t1, t2])
+        
+        while !stack.isEmpty() {
+            let t = stack.pop()!
+            
+            guard let ta = t[0], let tb = t[1] else{
+                continue
+            }
+            
+            ta.val += tb.val
+            
+            if ta.left == nil {
+                ta.left = tb.left
+            }else {
+                stack.push([ta.left, tb.left])
+            }
+            
+            if ta.right == nil {
+                ta.right = tb.right
+            }else {
+                stack.push([ta.right, tb.right])
+            }
+        }
         
         return t1
     }
