@@ -25,6 +25,8 @@
 		B18E18CD217C241B005E97CE /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18CC217C241B005E97CE /* TwoSum.swift */; };
 		B18E18CF217C2509005E97CE /* TwoSumII.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18CE217C2509005E97CE /* TwoSumII.swift */; };
 		B18E18D1217C3695005E97CE /* TwoSumIITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18D0217C3695005E97CE /* TwoSumIITest.swift */; };
+		B19E2C4B21FEEC6600DEB583 /* BinaryTreeMaxDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E2C4A21FEEC6600DEB583 /* BinaryTreeMaxDepth.swift */; };
+		B19E2C4D21FEEC8100DEB583 /* BinaryTreeMaxDepthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E2C4C21FEEC8100DEB583 /* BinaryTreeMaxDepthTest.swift */; };
 		B1A3C23621D3208C00C9E0BD /* Search in a Binary Search Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3C23521D3208C00C9E0BD /* Search in a Binary Search Tree.swift */; };
 		B1A3C23821D32A5D00C9E0BD /* searchBSTTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3C23721D32A5D00C9E0BD /* searchBSTTest.swift */; };
 		B1A3C23A21D32EF200C9E0BD /* invertTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3C23921D32EF200C9E0BD /* invertTree.swift */; };
@@ -101,6 +103,8 @@
 		B18E18CC217C241B005E97CE /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		B18E18CE217C2509005E97CE /* TwoSumII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumII.swift; sourceTree = "<group>"; };
 		B18E18D0217C3695005E97CE /* TwoSumIITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumIITest.swift; sourceTree = "<group>"; };
+		B19E2C4A21FEEC6600DEB583 /* BinaryTreeMaxDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeMaxDepth.swift; sourceTree = "<group>"; };
+		B19E2C4C21FEEC8100DEB583 /* BinaryTreeMaxDepthTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeMaxDepthTest.swift; sourceTree = "<group>"; };
 		B1A3C23521D3208C00C9E0BD /* Search in a Binary Search Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search in a Binary Search Tree.swift"; sourceTree = "<group>"; };
 		B1A3C23721D32A5D00C9E0BD /* searchBSTTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBSTTest.swift; sourceTree = "<group>"; };
 		B1A3C23921D32EF200C9E0BD /* invertTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invertTree.swift; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 				B1075CB421E8CFF30088DFE1 /* ReverseIntegerTest.swift */,
 				B1075CBA21F1CDF70088DFE1 /* MergeTreesTest.swift */,
 				B1075CBC21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift */,
+				B19E2C4C21FEEC8100DEB583 /* BinaryTreeMaxDepthTest.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				B1CF67EC21E31923003D8E24 /* Sort.swift */,
 				B1075CAE21E8BFA40088DFE1 /* Reverse String.swift */,
 				B1075CB621ED7A210088DFE1 /* Merge Two Binary Trees.swift */,
+				B19E2C4A21FEEC6600DEB583 /* BinaryTreeMaxDepth.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 				B1A3C2A621D61D4900C9E0BD /* Network Delay Time.swift in Sources */,
 				B1A3C23621D3208C00C9E0BD /* Search in a Binary Search Tree.swift in Sources */,
 				B1A3C2B221D9CAF500C9E0BD /* LinkedListIsPalindrome.swift in Sources */,
+				B19E2C4B21FEEC6600DEB583 /* BinaryTreeMaxDepth.swift in Sources */,
 				B1A3C2AE21D87F6B00C9E0BD /* LinkedListDeleteDuplicates.swift in Sources */,
 				B1A3C2C221DE5D6C00C9E0BD /* FindUnsortedSubarray.swift in Sources */,
 				B1CF67F121E37EE0003D8E24 /* Heap.swift in Sources */,
@@ -434,6 +441,7 @@
 				B1A3C2A421D603EB00C9E0BD /* InvertTreeTest.swift in Sources */,
 				B18E18CA217C23BA005E97CE /* TwoSumTests.swift in Sources */,
 				B1A3C23821D32A5D00C9E0BD /* searchBSTTest.swift in Sources */,
+				B19E2C4D21FEEC8100DEB583 /* BinaryTreeMaxDepthTest.swift in Sources */,
 				B1A3C2B421D9CB4600C9E0BD /* LinkedListIsPalindromeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
