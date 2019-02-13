@@ -16,6 +16,8 @@
 		B1075CB921F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CB821F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift */; };
 		B1075CBB21F1CDF70088DFE1 /* MergeTreesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CBA21F1CDF70088DFE1 /* MergeTreesTest.swift */; };
 		B1075CBD21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CBC21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift */; };
+		B12786612203EFF9007A0830 /* Diameter of Binary Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12786602203EFF9007A0830 /* Diameter of Binary Tree.swift */; };
+		B12786632203FC8D007A0830 /* DiameterBinaryTreeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12786622203FC8D007A0830 /* DiameterBinaryTreeTest.swift */; };
 		B18E18AA217C238D005E97CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18A9217C238D005E97CE /* AppDelegate.swift */; };
 		B18E18AC217C238D005E97CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18AB217C238D005E97CE /* ViewController.swift */; };
 		B18E18AF217C238D005E97CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E18AD217C238D005E97CE /* Main.storyboard */; };
@@ -90,6 +92,8 @@
 		B1075CB821F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBSTtoGreaterTree.swift; sourceTree = "<group>"; };
 		B1075CBA21F1CDF70088DFE1 /* MergeTreesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTreesTest.swift; sourceTree = "<group>"; };
 		B1075CBC21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBSTtoGreaterTreeTest.swift; sourceTree = "<group>"; };
+		B12786602203EFF9007A0830 /* Diameter of Binary Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diameter of Binary Tree.swift"; sourceTree = "<group>"; };
+		B12786622203FC8D007A0830 /* DiameterBinaryTreeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiameterBinaryTreeTest.swift; sourceTree = "<group>"; };
 		B18E18A6217C238D005E97CE /* LeetCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18E18A9217C238D005E97CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18E18AB217C238D005E97CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B127865E2203EEDE007A0830 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				B1A3C23B21D36FF400C9E0BD /* IsSubtree.swift */,
+				B1075CB621ED7A210088DFE1 /* Merge Two Binary Trees.swift */,
+				B19E2C4A21FEEC6600DEB583 /* BinaryTreeMaxDepth.swift */,
+				B1B91E1921D0C0790011DBB6 /* Leaf-Similar Trees.swift */,
+				B1A3C23521D3208C00C9E0BD /* Search in a Binary Search Tree.swift */,
+				B1A3C23921D32EF200C9E0BD /* invertTree.swift */,
+				B1075CB821F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift */,
+				B12786602203EFF9007A0830 /* Diameter of Binary Tree.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		B127865F2203EF31007A0830 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				B1A3C29B21D515E700C9E0BD /* ReverseList.swift */,
+				B1A3C29F21D528D200C9E0BD /* MergeTwoSortedLists.swift */,
+				B1A3C2AD21D87F6B00C9E0BD /* LinkedListDeleteDuplicates.swift */,
+				B1A3C2B121D9CAF500C9E0BD /* LinkedListIsPalindrome.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
 		B18E189D217C238D005E97CE = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +258,7 @@
 				B1075CBA21F1CDF70088DFE1 /* MergeTreesTest.swift */,
 				B1075CBC21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift */,
 				B19E2C4C21FEEC8100DEB583 /* BinaryTreeMaxDepthTest.swift */,
+				B12786622203FC8D007A0830 /* DiameterBinaryTreeTest.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -235,31 +266,22 @@
 		B18E18CB217C23F6005E97CE /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				B127865F2203EF31007A0830 /* LinkedList */,
+				B127865E2203EEDE007A0830 /* Tree */,
 				B18E18CC217C241B005E97CE /* TwoSum.swift */,
 				B1CF67E821E2393B003D8E24 /* ThirdMax.swift */,
 				B18E18CE217C2509005E97CE /* TwoSumII.swift */,
 				B1B91DDF21CCEA1D0011DBB6 /* RemoveDuplicatesfromSortedArray.swift */,
 				B1B91DE321CF4EEA0011DBB6 /* ShortestCompetingWorld.swift */,
-				B1B91E1921D0C0790011DBB6 /* Leaf-Similar Trees.swift */,
-				B1A3C23521D3208C00C9E0BD /* Search in a Binary Search Tree.swift */,
-				B1A3C23921D32EF200C9E0BD /* invertTree.swift */,
-				B1A3C29B21D515E700C9E0BD /* ReverseList.swift */,
-				B1A3C23B21D36FF400C9E0BD /* IsSubtree.swift */,
 				B1075CB221E8CF950088DFE1 /* Reverse Integer.swift */,
-				B1A3C29F21D528D200C9E0BD /* MergeTwoSortedLists.swift */,
 				B1A3C2A521D61D4900C9E0BD /* Network Delay Time.swift */,
-				B1075CB821F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift */,
 				B1A3C2A721D6379800C9E0BD /* Jewels and Stones.swift */,
-				B1A3C2AD21D87F6B00C9E0BD /* LinkedListDeleteDuplicates.swift */,
-				B1A3C2B121D9CAF500C9E0BD /* LinkedListIsPalindrome.swift */,
 				B1A3C2B521DA1F5200C9E0BD /* Unique Email Addresses.swift */,
 				B1A3C2B921DC50DD00C9E0BD /* MaxProfit.swift */,
 				B1A3C2BD21DD08A900C9E0BD /* HammingDistance.swift */,
 				B1A3C2C121DE5D6C00C9E0BD /* FindUnsortedSubarray.swift */,
 				B1CF67EC21E31923003D8E24 /* Sort.swift */,
 				B1075CAE21E8BFA40088DFE1 /* Reverse String.swift */,
-				B1075CB621ED7A210088DFE1 /* Merge Two Binary Trees.swift */,
-				B19E2C4A21FEEC6600DEB583 /* BinaryTreeMaxDepth.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -379,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1A3C2BA21DC50DD00C9E0BD /* MaxProfit.swift in Sources */,
+				B12786612203EFF9007A0830 /* Diameter of Binary Tree.swift in Sources */,
 				B18E18AC217C238D005E97CE /* ViewController.swift in Sources */,
 				B1B91E1A21D0C0790011DBB6 /* Leaf-Similar Trees.swift in Sources */,
 				B18E18AA217C238D005E97CE /* AppDelegate.swift in Sources */,
@@ -433,6 +456,7 @@
 				B1A3C2B021D8826D00C9E0BD /* LinkedListDeleteDuplicatesTest.swift in Sources */,
 				B1A3C2AA21D637AF00C9E0BD /* Jewels&StonesTest.swift in Sources */,
 				B1A3C2C421DE5DA300C9E0BD /* FindUnsortedSubarrayTest.swift in Sources */,
+				B12786632203FC8D007A0830 /* DiameterBinaryTreeTest.swift in Sources */,
 				B1B91E1C21D0C0880011DBB6 /* Leaf-Similar Trees.swift in Sources */,
 				B1A3C2A221D5290000C9E0BD /* MergeTwoListsTest.swift in Sources */,
 				B1B91DE621CF4F060011DBB6 /* ShortestCompetingWorldTest.swift in Sources */,
