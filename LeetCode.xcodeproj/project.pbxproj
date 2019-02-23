@@ -16,6 +16,8 @@
 		B1075CB921F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CB821F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift */; };
 		B1075CBB21F1CDF70088DFE1 /* MergeTreesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CBA21F1CDF70088DFE1 /* MergeTreesTest.swift */; };
 		B1075CBD21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CBC21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift */; };
+		B10EADB2221E8B4D001DCB69 /* Climbing Stairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EADB1221E8B4D001DCB69 /* Climbing Stairs.swift */; };
+		B10EADB6221E8B9F001DCB69 /* ClimbingStairsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EADB5221E8B9F001DCB69 /* ClimbingStairsTest.swift */; };
 		B12786612203EFF9007A0830 /* Diameter of Binary Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12786602203EFF9007A0830 /* Diameter of Binary Tree.swift */; };
 		B12786632203FC8D007A0830 /* DiameterBinaryTreeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12786622203FC8D007A0830 /* DiameterBinaryTreeTest.swift */; };
 		B18E18AA217C238D005E97CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E18A9217C238D005E97CE /* AppDelegate.swift */; };
@@ -92,6 +94,8 @@
 		B1075CB821F1CD680088DFE1 /* ConvertBSTtoGreaterTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBSTtoGreaterTree.swift; sourceTree = "<group>"; };
 		B1075CBA21F1CDF70088DFE1 /* MergeTreesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTreesTest.swift; sourceTree = "<group>"; };
 		B1075CBC21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBSTtoGreaterTreeTest.swift; sourceTree = "<group>"; };
+		B10EADB1221E8B4D001DCB69 /* Climbing Stairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Climbing Stairs.swift"; sourceTree = "<group>"; };
+		B10EADB5221E8B9F001DCB69 /* ClimbingStairsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairsTest.swift; sourceTree = "<group>"; };
 		B12786602203EFF9007A0830 /* Diameter of Binary Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diameter of Binary Tree.swift"; sourceTree = "<group>"; };
 		B12786622203FC8D007A0830 /* DiameterBinaryTreeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiameterBinaryTreeTest.swift; sourceTree = "<group>"; };
 		B18E18A6217C238D005E97CE /* LeetCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,6 +263,7 @@
 				B1075CBC21F1D07C0088DFE1 /* ConvertBSTtoGreaterTreeTest.swift */,
 				B19E2C4C21FEEC8100DEB583 /* BinaryTreeMaxDepthTest.swift */,
 				B12786622203FC8D007A0830 /* DiameterBinaryTreeTest.swift */,
+				B10EADB5221E8B9F001DCB69 /* ClimbingStairsTest.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				B1A3C2C121DE5D6C00C9E0BD /* FindUnsortedSubarray.swift */,
 				B1CF67EC21E31923003D8E24 /* Sort.swift */,
 				B1075CAE21E8BFA40088DFE1 /* Reverse String.swift */,
+				B10EADB1221E8B4D001DCB69 /* Climbing Stairs.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				B1075CAF21E8BFA40088DFE1 /* Reverse String.swift in Sources */,
 				B1A3C2B621DA1F5200C9E0BD /* Unique Email Addresses.swift in Sources */,
 				B1A3C2A821D6379800C9E0BD /* Jewels and Stones.swift in Sources */,
+				B10EADB2221E8B4D001DCB69 /* Climbing Stairs.swift in Sources */,
 				B1B91E1F21D0C64D0011DBB6 /* TreeNode.swift in Sources */,
 				B1A3C23A21D32EF200C9E0BD /* invertTree.swift in Sources */,
 				B1A3C2A021D528D200C9E0BD /* MergeTwoSortedLists.swift in Sources */,
@@ -467,6 +474,7 @@
 				B1A3C23821D32A5D00C9E0BD /* searchBSTTest.swift in Sources */,
 				B19E2C4D21FEEC8100DEB583 /* BinaryTreeMaxDepthTest.swift in Sources */,
 				B1A3C2B421D9CB4600C9E0BD /* LinkedListIsPalindromeTest.swift in Sources */,
+				B10EADB6221E8B9F001DCB69 /* ClimbingStairsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
