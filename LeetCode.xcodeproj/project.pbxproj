@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79A8733722C501B300910AAF /* LinkedListNodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8733622C501B300910AAF /* LinkedListNodeTest.swift */; };
 		B1075CAD21E7753D0088DFE1 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CAC21E7753D0088DFE1 /* LinkedListTest.swift */; };
 		B1075CAF21E8BFA40088DFE1 /* Reverse String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CAE21E8BFA40088DFE1 /* Reverse String.swift */; };
 		B1075CB121E8C21C0088DFE1 /* ReverseStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075CB021E8C21C0088DFE1 /* ReverseStringTest.swift */; };
@@ -85,6 +86,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79A8733622C501B300910AAF /* LinkedListNodeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNodeTest.swift; sourceTree = "<group>"; };
 		B1075CAC21E7753D0088DFE1 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		B1075CAE21E8BFA40088DFE1 /* Reverse String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reverse String.swift"; sourceTree = "<group>"; };
 		B1075CB021E8C21C0088DFE1 /* ReverseStringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseStringTest.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				B1A3C2C321DE5DA300C9E0BD /* FindUnsortedSubarrayTest.swift */,
 				B1CF67EE21E32491003D8E24 /* SortTest.swift */,
 				B1075CAC21E7753D0088DFE1 /* LinkedListTest.swift */,
+				79A8733622C501B300910AAF /* LinkedListNodeTest.swift */,
 				B1075CB021E8C21C0088DFE1 /* ReverseStringTest.swift */,
 				B1075CB421E8CFF30088DFE1 /* ReverseIntegerTest.swift */,
 				B1075CBA21F1CDF70088DFE1 /* MergeTreesTest.swift */,
@@ -468,6 +471,7 @@
 				B1A3C2A221D5290000C9E0BD /* MergeTwoListsTest.swift in Sources */,
 				B1B91DE621CF4F060011DBB6 /* ShortestCompetingWorldTest.swift in Sources */,
 				B1075CAD21E7753D0088DFE1 /* LinkedListTest.swift in Sources */,
+				79A8733722C501B300910AAF /* LinkedListNodeTest.swift in Sources */,
 				B1A3C23E21D3700D00C9E0BD /* IsSubtreeTest.swift in Sources */,
 				B1A3C2A421D603EB00C9E0BD /* InvertTreeTest.swift in Sources */,
 				B18E18CA217C23BA005E97CE /* TwoSumTests.swift in Sources */,

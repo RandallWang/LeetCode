@@ -14,12 +14,11 @@ public class ListNode<T: Equatable>{
     
     public init(_ val: T) {
         self.val = val
-        self.next = nil
     }
     
     public func append(_ nodeValue: T) {
         guard let nextNode = self.next else {
-            self.next = ListNode.init(nodeValue)
+            self.next = ListNode(nodeValue)
             return
         }
         var lastNode: ListNode? = nextNode
@@ -27,11 +26,89 @@ public class ListNode<T: Equatable>{
         while lastNode?.next != nil{
             lastNode = lastNode?.next
         }
-        lastNode?.next = ListNode.init(nodeValue)
+        lastNode?.next = ListNode(nodeValue)
+    }
+}
+
+public class TwoWayListNode<T> {
+    private (set) var val: T
+    private (set) var next: TwoWayListNode?
+    private (set) weak var previous: TwoWayListNode?
+    
+    public init(val: T) {
+        self.val = val
     }
     
+    public init(values: [T]) {
+        guard !values.isEmpty else { fatalError("TwoWayListNode ERROR: Values is Empty!") }
+        self.val = values.first!
+        
+        var temp: TwoWayListNode? = self
+        for index in 1 ..< values.count {
+            temp?.append(node: TwoWayListNode(val: values[index]))
+            temp = temp?.next
+        }
+    }
     
+    public func append(node: TwoWayListNode) {
+        guard let nextNode = next else {
+            self.next = node
+            node.previous = self
+            return
+        }
+        var lastNode: TwoWayListNode? = nextNode
+        
+        while lastNode?.next != nil{
+            lastNode = lastNode?.next
+        }
+        
+        lastNode?.next = node
+        node.previous = lastNode
+    }
+    
+    public func append(_ value: T) {
+        guard let nextNode = next else {
+            let node = TwoWayListNode(val: value)
+            self.next = node
+            node.previous = self
+            return
+        }
+        var lastNode: TwoWayListNode? = nextNode
+        
+        while lastNode?.next != nil{
+            lastNode = lastNode?.next
+        }
+        
+        let node = TwoWayListNode(val: value)
+
+        lastNode?.next = node
+        node.previous = lastNode
+    }
 }
+
+extension TwoWayListNode: CustomStringConvertible {
+    public var description: String {
+        var linkedListDes = "\(self.val)"
+        
+        var temp: TwoWayListNode = self
+        
+        while let next = temp.next {
+            linkedListDes.append(" -> \(next.val)")
+            temp = next
+        }
+        linkedListDes += "\n"
+        
+        linkedListDes += "\(temp.val)"
+        
+        while let previous = temp.previous {
+            linkedListDes.append(" -> \(previous.val)")
+            temp = previous
+        }
+        
+        return "\(type(of: self)): \n\(linkedListDes)"
+    }
+}
+
 extension ListNode: CustomStringConvertible {
     public var description: String {
         var linkedListDes = "\(self.val)"
